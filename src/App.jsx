@@ -3,6 +3,7 @@ import "./App.css";
 import Reactus from "./Component/Reactus";
 import Forms from "./Component/Forms";
 import State from "./Component/State";
+import Ref from "./Component/Ref";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Reactus />
       <Forms />
       <State />
+      <Ref />
     </>
   );
 }
