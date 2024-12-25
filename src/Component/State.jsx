@@ -19,7 +19,7 @@ function State() {
       </p>
       <h2>
         {arr.map((ah) => {
-          return <li key={ah.id}>{ah}</li>;
+          return <li key={ah}>{ah}</li>;
         })}
       </h2>
       <p>
