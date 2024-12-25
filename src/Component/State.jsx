@@ -30,7 +30,7 @@ function State() {
       <p>My favolite color is {color}</p>
       <button
         className="btn bg-blue-500 rounded p-1"
-        onClick={() => setColor(() => count + "Green")}
+        onClick={() => setColor(() => "Green")}
       >
         My color
       </button>

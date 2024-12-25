@@ -4,6 +4,7 @@ import Reactus from "./Component/Reactus";
 import Forms from "./Component/Forms";
 import State from "./Component/State";
 import Ref from "./Component/Ref";
+import Effect from "./Component/Effect";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Forms />
       <State />
       <Ref />
+      <Effect />
     </>
   );
 }
