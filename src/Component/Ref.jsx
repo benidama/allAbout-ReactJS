@@ -6,26 +6,29 @@ function Ref() {
   const refHook = useRef("");
   useEffect(() => {
     valeur;
+    // refHook.current.focus;
+    refHook.current.style.backgroundColor = "blue";
   }, [valeur]);
+
   return (
     <div>
       <h1 className="text-center text-green-500">UseHook in react</h1>
       <h3>Learn how to use useRef react hook</h3>
       <input
-        className="bg-slate-400 text-center"
+        className=" text-center m-2 btn rounded-md p-2 text-white"
         type="text"
+        ref={refHook}
         value={valeur}
         onChange={(e) => setValeur(e.target.value)}
         placeholder="Enter your name"
       />
-      <h2> Your name is {valeur},</h2>
+      <h2 className="text-2xl text-emerald-400">
+        Hi {valeur}, we are at {tik}h
+      </h2>
       <p>
         UseRef is the best one in all hooks, you can use in order to manipulate
         html DOM.
       </p>
-      <h2>
-        Hi {valeur}, we are at {tik}h
-      </h2>
     </div>
   );
 }
