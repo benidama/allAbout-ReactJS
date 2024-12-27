@@ -19,6 +19,10 @@ function Ref() {
         placeholder="Enter your name"
       />
       <h2> Your name is {valeur},</h2>
+      <p>
+        UseRef is the best one in all hooks, you can use in order to manipulate
+        html DOM.
+      </p>
       <h2>
         Hi {valeur}, we are at {tik}h
       </h2>
