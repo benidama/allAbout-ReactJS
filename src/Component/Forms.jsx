@@ -39,6 +39,14 @@ function Forms() {
           onChange={inputValue}
           placeholder="your age plse"
         />
+        <label htmlFor="age">Enter your message</label>
+        <input
+          type="text"
+          name="message"
+          value={inputs.message}
+          onChange={inputValue}
+          placeholder="your age message"
+        />
         <input type="submit" />
       </form>
     </div>
