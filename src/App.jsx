@@ -5,6 +5,7 @@ import Forms from "./Component/Forms";
 import State from "./Component/State";
 import Ref from "./Component/Ref";
 import Effect from "./Component/Effect";
+import JustPush from "./Component/JustPush";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <State />
       <Ref />
       <Effect />
+      <JustPush />
     </>
   );
 }

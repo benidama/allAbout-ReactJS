@@ -1,6 +1,7 @@
 import React from "react";
 
 function JustPush() {
+  const arr = ["Rayon", "APR", "Gasogi", "Police"];
   return (
     <div>
       <h1>Hello guys, I love you all.</h1>
@@ -9,6 +10,15 @@ function JustPush() {
         how I have starting my new year.But I was starting with sad news where
         we loose our lovely family member.
       </p>
+      <h3>
+        This year will help me to grow my skills especial in programming
+        technologies.
+      </h3>
+      <h1 className="text-2xl text-green-950 p-3">
+        {arr.map((el) => {
+          return <li key={el}>{el}</li>;
+        })}
+      </h1>
     </div>
   );
 }
