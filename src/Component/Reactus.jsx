@@ -9,7 +9,10 @@ const Reactus = () => {
         explicabo modi, praesentium atque sapiente error facilis natus illum
         fuga vel illo rem quibusdam.
       </p>
-      <p>I need to know more about react js</p>
+      <p className="text-indigo-700 text-sm">
+        I need to know more about react js, and I hope one day I will become a
+        full stack dev not more than two years
+      </p>
     </div>
   );
 };
