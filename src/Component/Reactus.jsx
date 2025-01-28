@@ -13,6 +13,10 @@ const Reactus = () => {
         I need to know more about react js, and I hope one day I will become a
         full stack dev not more than two years
       </p>
+      <h5 className="text-xl text-cyan-800 p-3">
+        I would like to tell you all that I will become a rich as long as
+        possible.
+      </h5>
     </div>
   );
 };
