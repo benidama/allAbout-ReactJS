@@ -19,6 +19,9 @@ function JustPush() {
           return <li key={el}>{el}</li>;
         })}
       </h1>
+      <p>
+        Hey, I am new in back-end dev
+      </p>
     </div>
   );
 }
