@@ -20,7 +20,7 @@ function JustPush() {
         })}
       </h1>
       <p>
-        Hey, I am new in back-end dev
+        Hey, I am new in back-end dev. So, I need your support because you know many things on this journey.
       </p>
     </div>
   );
