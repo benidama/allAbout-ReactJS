@@ -1,79 +1,56 @@
-import React from "react";
-import logo from "/images/BJD-favicon.png";
+import { Outlet, NavLink } from "react-router-dom";
+import profile from "/images/BJD-favicon.png";
 
 function Navbar() {
+  const styling = ({ isActive }) =>
+    isActive
+      ? "bg-indigo-700 text-white hover:bg-pink-600 hover:text-white text-lg rounded-md px-3 py-2"
+      : "text-white hover:bg-pink-600 hover:text-white text-lg rounded-md px-3 py-2";
   return (
-    <div>
-      <nav className="flex flex-row justify-between items-center ml-20 mr-20 pt-3 pb-3">
-        <div className="flex flex-row gap-3">
-          <img className="w-[65px]" src={logo} alt="Company logo in letters" />
-          <h3 className=" md:text-2xl md:block pt-3 sm:hidden">Company logo</h3>
-        </div>
+    <nav className="bg-gray-800 text-white p-4 border-b border-indigo-500">
+      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div className="flex h-20 items-center justify-between">
+          <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
+            <NavLink className="flex flex-shrink-0 items-center mr-4" to="/">
+              <img className="h-10 w-auto" src={profile} alt="BJD profile" />
+              <span className="hidden md:block text-white text-2xl font-bold ml-2">
+                BJD Portfolio
+              </span>
+            </NavLink>
+            <div className="md:ml-auto">
+              <div className="flex space-x-2">
+                <NavLink to="/" className={styling}>
+                  Home
+                </NavLink>
+                <NavLink to="/about" className={styling}>
+                  About
+                </NavLink>
 
-        <ul className="flex flex-row justify-center items-center gap-4">
-          <li>
-            <a
-              className="text-[rgba(29,33,48,1)]"
-              href="http://"
-              target="_blank"
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              className="text-[rgba(29,33,48,1)]"
-              href="http://"
-              target="_blank"
-            >
-              Product
-            </a>
-          </li>
-          <li>
-            <a
-              className="text-[rgba(29,33,48,1)]"
-              href="http://"
-              target="_blank"
-            >
-              Pricing
-            </a>
-          </li>
-          <li>
-            <a
-              className="text-[rgba(29,33,48,1)]"
-              href="http://"
-              target="_blank"
-            >
-              About Us
-            </a>
-          </li>
-          <li>
-            <a
-              className="text-[rgba(29,33,48,1)]"
-              href="http://"
-              target="_blank"
-            >
-              Blog
-            </a>
-          </li>
-          <li>
-            <a
-              className="text-[rgba(29,33,48,1)]"
-              href="http://"
-              target="_blank"
-            >
-              Contact
-            </a>
-          </li>
-          <li>
-            <button className="bg-[rgba(29,33,48,1)] w-28 h-9 rounded-md text-center text-[rgba(255,255,255,1)]">
-              Free trial
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </div>
+                <NavLink to="/price" className={styling}>
+                  Pricing
+                </NavLink>
+                <NavLink to="/contact" className={styling}>
+                  Contact
+                </NavLink>
+                <NavLink to="/blog" className={styling}>
+                  Blog
+                </NavLink>
+                <NavLink to="/free-trial" className={styling}>
+                  PostBlog
+                </NavLink>
+                <NavLink to="/product" className={styling}>
+                  Product
+                </NavLink>
+                <NavLink to="/*" className={styling}>
+                  NoPage
+                </NavLink>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Outlet />
+    </nav>
   );
 }
-
 export default Navbar;
