@@ -1,36 +1,33 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Navbar from "./Component/Navbar";
-import PostBlog from "./Component/PostBlog";
-import Footer from "./Component/Footer";
-import Home from "./Component/Home";
-import Contact from "./Component/Contact";
-import Blog from "./Component/Blog";
-import Pricing from "./Component/Pricing";
-import About from "./Component/About";
-import Product from "./Component/Product";
-import NoPage from "./Component/NoPage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./pages/Navbar";
+import PostBlog from "./pages/PostBlog";
+import Footer from "./pages/Footer";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
+import Pricing from "./pages/Pricing";
+import About from "./pages/About";
+import Product from "./pages/Product";
 
 function App() {
   return (
     <>
-      <Router>
+      <BrowserRouter>
         <Navbar />
-
         <Routes>
-          <Route path="/" element={<Home />}>
-            <Route path="/product" element={<Product />} />
-            <Route path="/price" element={<Pricing />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/free-trail" element={<PostBlog />} />
-            <Route path="/*" element={<NoPage />} />
+          <Route path="/">
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="product" element={<Product />} />
+            <Route path="price" element={<Pricing />} />
+            <Route path="blog" element={<Blog />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="post" element={<PostBlog />} />
           </Route>
         </Routes>
-
         <Footer />
-      </Router>
+      </BrowserRouter>
     </>
   );
 }

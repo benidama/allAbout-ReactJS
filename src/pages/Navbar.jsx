@@ -14,7 +14,7 @@ function Navbar() {
             <NavLink className="flex flex-shrink-0 items-center mr-4" to="/">
               <img className="h-10 w-auto" src={profile} alt="BJD profile" />
               <span className="hidden md:block text-white text-2xl font-bold ml-2">
-                BJD Portfolio
+                Company logo
               </span>
             </NavLink>
             <div className="md:ml-auto">
@@ -26,23 +26,20 @@ function Navbar() {
                   About
                 </NavLink>
 
+                <NavLink to="/product" className={styling}>
+                  Product
+                </NavLink>
                 <NavLink to="/price" className={styling}>
                   Pricing
-                </NavLink>
-                <NavLink to="/contact" className={styling}>
-                  Contact
                 </NavLink>
                 <NavLink to="/blog" className={styling}>
                   Blog
                 </NavLink>
-                <NavLink to="/free-trial" className={styling}>
+                <NavLink to="/contact" className={styling}>
+                  Contact
+                </NavLink>
+                <NavLink to="/post" className={styling}>
                   PostBlog
-                </NavLink>
-                <NavLink to="/product" className={styling}>
-                  Product
-                </NavLink>
-                <NavLink to="/*" className={styling}>
-                  NoPage
                 </NavLink>
               </div>
             </div>
