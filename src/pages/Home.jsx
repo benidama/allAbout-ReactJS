@@ -1,7 +1,400 @@
 import React from "react";
+import bg from "/images/homepage/image-2.png";
+import arrow from "/images/homepage/Arrow.jpg";
+import divider from "/images/homepage/Divider.png";
 
 function Home() {
-  return <div>Home</div>;
+  return (
+    <div>
+      <header className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center gap-5 bg-gradient-to-b from-white via-teal-100 border-teal-100">
+          <h1 className="font-bold text-[rgba(29,33,48,1)] text-[40px] leading-10 text-center w-[530px]">
+            The Best Software to Grow your Sales and Services
+          </h1>
+          <p className="text-sm w-[570px] text-center">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat.
+          </p>
+          <form
+            action=""
+            className="bg-[rgba(255,255,255,1)] flex justify-between items-center flex-row h-12 w-[390px] pl-3 pr-1 rounded-lg mb-7"
+          >
+            <input
+              className="text-[rgba(29,33,48,1)] text-[11px]"
+              type="text"
+              id="inptForm"
+              placeholder="Enter your Email"
+            />
+            <button className="bg-[rgba(29,33,48,1)] w-28 h-8 rounded-md text-center text-[rgba(255,255,255,1)]">
+              Get Free trial
+            </button>
+          </form>
+        </div>
+        <div className="flex justify-center items-center mt-7">
+          <img
+            className="w-[890px] h-[646px] border-[rgba(224,228,252,1)] border-[2px] rounded-2xl"
+            src={bg}
+            alt="dashboard overview"
+          />
+        </div>
+      </header>
+      <main>
+        <div className="flex flex-col justify-center items-center gap-2">
+          <div className="flex flex-col justify-center items-center gap-3 mb-6">
+            <h1 className="text-gradient-[from-#373FFF-to-#3ACAF8]">
+              High-quality
+            </h1>
+            <h1 className="font-bold text-[rgba(29,33,48,1)] text-[40px] leading-10 text-center w-[530px]">
+              We have the Best Solution for your Business
+            </h1>
+          </div>
+          <div className="flex flex-row justify-center items-center bg-[rgba(224,228,252,1)] p-10 rounded-xl">
+            <div className="flex flex-col gap-3">
+              <img
+                className="w-10"
+                src="/images/homepage/Icon 1.png"
+                alt="User first confirmation"
+              />
+
+              <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[310px]">
+                High security to protect from piracy
+              </h1>
+              <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-4 text-left w-[285px]">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy.
+              </p>
+            </div>
+            <div className="flex flex-col gap-3">
+              <img
+                className="w-10"
+                src="/images/homepage/Icon 2.png"
+                alt="Icon of user confirmation"
+              />
+
+              <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[310px]">
+                Premium quality performance
+              </h1>
+              <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-4 text-left w-[285px]">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy.
+              </p>
+            </div>
+            <div className="flex flex-col gap-3">
+              <img
+                className="w-10"
+                src="/images/homepage/Icon 3.png"
+                alt="Icon of air phone"
+              />
+
+              <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[270px]">
+                Full time customer support - 24/7
+              </h1>
+              <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-4 text-left w-[285px]">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-row justify-center items-center mt-14 mb-14">
+          <div className="flex flex-col justify-center items-start gap-3 w-[500px]">
+            <h3 className="text-left text-[16px] text-blue-950">
+              Why should you work with us?
+            </h3>
+            <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[310px]">
+              To upscale your business to the next level
+            </h1>
+            <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-4 text-left w-[415px]">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua invidunt ut labore.
+            </p>
+          </div>
+          <div className="flex flex-col justify-center items-center gap-4">
+            <div className="flex flex-row justify-center items-center gap-2">
+              <div className="w-6 bg-[rgba(255,172,172,1)] rounded-full justify-center flex items-center h-6">
+                <img className="w-6 h-6" src={arrow} alt="Arrow logo" />
+              </div>
+              <p className="font-medium text-[rgba(29,33,48,1)] text-[14px] leading-5 text-left w-[415px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod.
+              </p>
+            </div>
+
+            <div className="flex flex-row justify-center items-center gap-2">
+              <div className="w-6 bg-[rgba(255,172,172,1)] rounded-full justify-center flex items-center h-6">
+                <img className="w-6 h-6" src={arrow} alt="Arrow logo" />
+              </div>
+              <p className="font-medium text-[rgba(29,33,48,1)] text-[14px] leading-5 text-left w-[415px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod.
+              </p>
+            </div>
+
+            <div className="flex flex-row justify-center items-center gap-2">
+              <div className="w-6 bg-[rgba(255,172,172,1)] rounded-full justify-center flex items-center h-6">
+                <img className="w-6 h-6" src={arrow} alt="Arrow logo" />
+              </div>
+              <p className="font-medium text-[rgba(29,33,48,1)] text-[14px] leading-5 text-left w-[415px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-row justify-center items-center pt-7 pb-7 bg-gradient-to-r from-blue-400 to-blue-200 gap-10">
+          <div className="flex flex-col justify-center items-start gap-5">
+            <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[310px]">
+              More impressions, more conversions
+            </h1>
+            <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-5 text-left w-[415px]">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua invidunt ut labore.
+            </p>
+            <button className="bg-[rgba(29,33,48,1)] w-28 h-8 rounded-md text-center text-[rgba(255,255,255,1)]">
+              Get Free trial
+            </button>
+          </div>
+          <div>
+            <img
+              className="w-[545px] h-[300px]"
+              src={bg}
+              alt="It shows why our company is the best"
+            />
+          </div>
+        </div>
+        <div className="flex flex-row justify-between items-center pt-8 pb-8 ml-40 mr-20">
+          <img
+            className="w-28 h-8"
+            src="/images/homepage/Logo 1.jpg"
+            alt="One of our company logos"
+          />
+          <img
+            className="w-28 h-8"
+            src="/images/homepage/Logo 2.jpg"
+            alt="One of our company logos"
+          />
+          <img
+            className="w-28 h-8"
+            src="/images/homepage/Logo 3.jpg"
+            alt="One of our company logos"
+          />
+          <img
+            className="w-28 h-8"
+            src="/images/homepage/Logo 4.jpg"
+            alt="One of our company logos"
+          />
+          <img
+            className="w-28 h-8"
+            src="/images/homepage/Logo 5.jpg"
+            alt="One of our company logos"
+          />
+        </div>
+
+        <div className="flex flex-row justify-center items-center mt-14 mb-14">
+          <div className="flex flex-col justify-center items-start gap-3 w-[500px]">
+            <h3 className="text-left text-[16px] text-blue-950">
+              Discover More
+            </h3>
+            <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[310px]">
+              Analyze your sales and marketing leads
+            </h1>
+            <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-4 text-left w-[415px]">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua invidunt ut labore.
+            </p>
+          </div>
+          <div className="flex flex-col justify-center items-center gap-4">
+            <div className="flex flex-row justify-center items-center gap-2">
+              <div className="w-10 bg-[rgba(244,245,247,1)] rounded-full justify-center flex items-center h-10">
+                <img
+                  className="w-4"
+                  src="/images/homepage/More1.jpg"
+                  alt="logo represents sales"
+                />
+              </div>
+              <div className="flex flex-col justify-center items-center">
+                <h3 className="font-medium text-[rgba(29,33,48,1)] text-[14px] leading-5 text-left w-[415px]">
+                  Sales Tracking
+                </h3>
+                <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 text-left w-[415px]">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-row justify-center items-center gap-2">
+              <div className="w-10 bg-[rgba(244,245,247,1)] rounded-full justify-center flex items-center h-10">
+                <img
+                  className="w-4"
+                  src="/images/homepage/More2.jpg"
+                  alt="logo represents projects"
+                />
+              </div>
+              <div className="flex flex-col justify-center items-center">
+                <h3 className="font-medium text-[rgba(29,33,48,1)] text-[14px] leading-5 text-left w-[415px]">
+                  Project Management
+                </h3>
+                <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 text-left w-[415px]">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-row justify-center items-center gap-2">
+              <div className="w-10 bg-[rgba(244,245,247,1)] rounded-full justify-center flex items-center h-10">
+                <img
+                  className="w-4"
+                  src="/images/homepage/More3.jpg"
+                  alt="logo represents activities"
+                />
+              </div>
+              <div className="flex flex-col justify-center items-center">
+                <h3 className="font-medium text-[rgba(29,33,48,1)] text-[14px] leading-5 text-left w-[415px]">
+                  Activity Report
+                </h3>
+                <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 text-left w-[415px]">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col justify-center items-center gap-2">
+          <div className="flex justify-center items-center">
+            <h1 className="font-bold text-[rgba(29,33,48,1)] mb-2 text-[40px] text-center">
+              Features
+            </h1>
+          </div>
+          <div className="flex flex-row justify-center items-center bg-[rgba(215,152,225,0.15)] p-10 rounded-xl">
+            <div className="flex flex-col gap-3">
+              <img
+                className="w-8"
+                src="/images/homepage/feat1.jpg"
+                alt="feature logo"
+              />
+
+              <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[310px]">
+                Advanced 256-bit encryption
+              </h1>
+              <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-4 text-left w-[235px]">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor.
+              </p>
+            </div>
+            <img className="pr-6 h-36" src={divider} alt="Divider logo" />
+            <div className="flex flex-col gap-3">
+              <img
+                className="w-8"
+                src="/images/homepage/feat2.jpg"
+                alt="feature logo"
+              />
+              <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[255px]">
+                Simple collaboration tools
+              </h1>
+              <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-4 text-left w-[235px]">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor.
+              </p>
+            </div>
+            <img className="pr-6 h-36" src={divider} alt="Divider logo" />
+            <div className="flex flex-col gap-3">
+              <img
+                className="w-8"
+                src="/images/homepage/feat3.jpg"
+                alt="feature logo"
+              />
+              <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[270px]">
+                Customizable AI features
+              </h1>
+              <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-4 text-left w-[235px]">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col justify-center items-center mt-14 mb-14">
+          <h1 className="font-bold text-[rgba(29,33,48,1)] mb-7 text-[40px] text-center leading-10 w-[630px]">
+            The stunning results our customers have experienced
+          </h1>
+          <div className="flex flex-row justify-center items-center gap-10">
+            <div className="flex flex-col justify-center items-center border-[2px] border-[rgba(97,153,237,0.26)] rounded-lg p-8">
+              <p className="font-medium text-[rgba(29,33,48,1)] text-xs leading-4 text-center w-[199px]">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua.
+              </p>
+              <img
+                className="w-7 h-6 rounded-full mt-3 mb-3"
+                src="/images/homepage/exper1.png"
+                alt="user profile"
+              />
+              <h3 className="font-medium text-[rgba(29,33,48,1)] text-sm text-center">
+                Ron Wood
+              </h3>
+              <p className="font-normal text-[rgba(29,33,48,1)] text-xs text-center">
+                CEO
+              </p>
+            </div>
+
+            <div className="flex flex-col justify-center items-center border-[2px] border-[rgba(97,153,237,0.26)] rounded-lg p-8">
+              <p className="font-medium text-[rgba(29,33,48,1)] text-xs leading-4 text-center w-[199px]">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua.
+              </p>
+              <img
+                className="w-7 h-6 rounded-full mt-3 mb-3"
+                src="/images/homepage/exp2.png"
+                alt="user profile"
+              />
+              <h3 className="font-medium text-[rgba(29,33,48,1)] text-sm text-center">
+                Sam Preston
+              </h3>
+              <p className="font-normal text-[rgba(29,33,48,1)] text-xs text-center">
+                CTO
+              </p>
+            </div>
+            <div className="flex flex-col justify-center items-center border-[2px] border-[rgba(97,153,237,0.26)] rounded-lg p-8">
+              <p className="font-medium text-[rgba(29,33,48,1)] text-xs leading-4 text-center w-[199px]">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua.
+              </p>
+              <img
+                className="w-7 h-6 rounded-full mt-3 mb-3"
+                src="/images/homepage/epx3.png"
+                alt="user profile"
+              />
+              <h3 className="font-medium text-[rgba(29,33,48,1)] text-sm text-center">
+                Ron Wood
+              </h3>
+              <p className="font-normal text-[rgba(29,33,48,1)] text-xs text-center">
+                CEO
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col justify-center items-center gap-5 pb-14 bg-gradient-to-t from-cyan-50 to-yellow-50">
+          <h1 className="font-bold text-[rgba(29,33,48,1)] text-[40px] text-center leading-10 w-[630px]">
+            Are you ready to grow your business with us?
+          </h1>
+          <p className="font-normal text-[rgba(29,33,48,1)] text-xs text-center">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy.
+          </p>
+          <button className="bg-[rgba(29,33,48,1)] w-28 h-9 rounded-md text-center text-[rgba(255,255,255,1)]">
+            Free trial
+          </button>
+        </div>
+      </main>
+    </div>
+  );
 }
 
 export default Home;
