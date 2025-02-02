@@ -1,4 +1,7 @@
 import React from "react";
+import contact1 from "/images/contact/Icon10.png";
+import contact2 from "/images/contact/Icon11.png";
+import contact3 from "/images/contact/Icon12.png";
 
 function Contact() {
   return (
@@ -56,7 +59,7 @@ function Contact() {
             </form>
             <div className="flex flex-col justify-center items-start mt-9 gap-4">
               <div className="flex flex-row justify-center items-start gap-3">
-                <img src="/images/contact/Icon10.png" alt="phone icon" />
+                <img src={contact1} alt="phone icon" />
                 <div className="flex flex-col justify-center items-start">
                   <h4 className="text-sm text-[rgba(29,33,48,1)] font-bold">
                     + 1800 145 276
@@ -68,7 +71,7 @@ function Contact() {
               </div>
 
               <div className="flex flex-row justify-center items-start gap-3">
-                <img src="/images/contact/Icon11.png" alt="phone icon" />
+                <img src={contact2} alt="phone icon" />
                 <div className="flex flex-col justify-center items-start">
                   <h4 className="text-sm text-[rgba(29,33,48,1)] font-bold">
                     finsweet@gmail.com
@@ -80,7 +83,7 @@ function Contact() {
               </div>
 
               <div className="flex flex-row justify-center items-start gap-3">
-                <img src="/images/contact/Icon12.png" alt="phone icon" />
+                <img src={contact3} alt="phone icon" />
                 <div className="flex flex-col justify-center items-start">
                   <h4 className="text-sm text-[rgba(29,33,48,1)] font-bold">
                     sales@finsweet.com

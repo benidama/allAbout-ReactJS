@@ -2,6 +2,23 @@ import React from "react";
 import bg from "/images/homepage/image-2.png";
 import arrow from "/images/homepage/Arrow.jpg";
 import divider from "/images/homepage/Divider.png";
+import solution1 from "/images/homepage/Icon 1.png";
+import solution2 from "/images/homepage/Icon 2.png";
+import solution3 from "/images/homepage/Icon 3.png";
+import logo1 from "/images/homepage/Logo 1.jpg";
+import logo2 from "/images/homepage/Logo 2.jpg";
+import logo3 from "/images/homepage/Logo 3.jpg";
+import logo4 from "/images/homepage/Logo 4.jpg";
+import logo5 from "/images/homepage/Logo 5.jpg";
+import more1 from "/images/homepage/More1.jpg";
+import more2 from "/images/homepage/More2.jpg";
+import more3 from "/images/homepage/More3.jpg";
+import feat1 from "/images/homepage/feat1.jpg";
+import feat2 from "/images/homepage/feat2.jpg";
+import feat3 from "/images/homepage/feat3.jpg";
+import leader1 from "/images/homepage/exper1.png";
+import leader2 from "/images/homepage/exp2.png";
+import leader3 from "/images/homepage/epx3.png";
 
 function Home() {
   return (
@@ -53,7 +70,7 @@ function Home() {
             <div className="flex flex-col gap-3">
               <img
                 className="w-10"
-                src="/images/homepage/Icon 1.png"
+                src={solution1}
                 alt="User first confirmation"
               />
 
@@ -68,7 +85,7 @@ function Home() {
             <div className="flex flex-col gap-3">
               <img
                 className="w-10"
-                src="/images/homepage/Icon 2.png"
+                src={solution2}
                 alt="Icon of user confirmation"
               />
 
@@ -81,11 +98,7 @@ function Home() {
               </p>
             </div>
             <div className="flex flex-col gap-3">
-              <img
-                className="w-10"
-                src="/images/homepage/Icon 3.png"
-                alt="Icon of air phone"
-              />
+              <img className="w-10" src={solution3} alt="Icon of air phone" />
 
               <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[270px]">
                 Full time customer support - 24/7
@@ -168,27 +181,27 @@ function Home() {
         <div className="flex flex-row justify-between items-center pt-8 pb-8 ml-40 mr-20">
           <img
             className="w-28 h-8"
-            src="/images/homepage/Logo 1.jpg"
+            src={logo1}
             alt="One of our company logos"
           />
           <img
             className="w-28 h-8"
-            src="/images/homepage/Logo 2.jpg"
+            src={logo2}
             alt="One of our company logos"
           />
           <img
             className="w-28 h-8"
-            src="/images/homepage/Logo 3.jpg"
+            src={logo3}
             alt="One of our company logos"
           />
           <img
             className="w-28 h-8"
-            src="/images/homepage/Logo 4.jpg"
+            src={logo4}
             alt="One of our company logos"
           />
           <img
             className="w-28 h-8"
-            src="/images/homepage/Logo 5.jpg"
+            src={logo5}
             alt="One of our company logos"
           />
         </div>
@@ -210,11 +223,7 @@ function Home() {
           <div className="flex flex-col justify-center items-center gap-4">
             <div className="flex flex-row justify-center items-center gap-2">
               <div className="w-10 bg-[rgba(244,245,247,1)] rounded-full justify-center flex items-center h-10">
-                <img
-                  className="w-4"
-                  src="/images/homepage/More1.jpg"
-                  alt="logo represents sales"
-                />
+                <img className="w-4" src={more1} alt="logo represents sales" />
               </div>
               <div className="flex flex-col justify-center items-center">
                 <h3 className="font-medium text-[rgba(29,33,48,1)] text-[14px] leading-5 text-left w-[415px]">
@@ -230,7 +239,7 @@ function Home() {
               <div className="w-10 bg-[rgba(244,245,247,1)] rounded-full justify-center flex items-center h-10">
                 <img
                   className="w-4"
-                  src="/images/homepage/More2.jpg"
+                  src={more2}
                   alt="logo represents projects"
                 />
               </div>
@@ -248,7 +257,7 @@ function Home() {
               <div className="w-10 bg-[rgba(244,245,247,1)] rounded-full justify-center flex items-center h-10">
                 <img
                   className="w-4"
-                  src="/images/homepage/More3.jpg"
+                  src={more3}
                   alt="logo represents activities"
                 />
               </div>
@@ -272,11 +281,7 @@ function Home() {
           </div>
           <div className="flex flex-row justify-center items-center bg-[rgba(215,152,225,0.15)] p-10 rounded-xl">
             <div className="flex flex-col gap-3">
-              <img
-                className="w-8"
-                src="/images/homepage/feat1.jpg"
-                alt="feature logo"
-              />
+              <img className="w-8" src={feat1} alt="feature logo" />
 
               <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[310px]">
                 Advanced 256-bit encryption
@@ -288,11 +293,7 @@ function Home() {
             </div>
             <img className="pr-6 h-36" src={divider} alt="Divider logo" />
             <div className="flex flex-col gap-3">
-              <img
-                className="w-8"
-                src="/images/homepage/feat2.jpg"
-                alt="feature logo"
-              />
+              <img className="w-8" src={feat2} alt="feature logo" />
               <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[255px]">
                 Simple collaboration tools
               </h1>
@@ -303,11 +304,7 @@ function Home() {
             </div>
             <img className="pr-6 h-36" src={divider} alt="Divider logo" />
             <div className="flex flex-col gap-3">
-              <img
-                className="w-8"
-                src="/images/homepage/feat3.jpg"
-                alt="feature logo"
-              />
+              <img className="w-8" src={feat3} alt="feature logo" />
               <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[270px]">
                 Customizable AI features
               </h1>
@@ -331,7 +328,7 @@ function Home() {
               </p>
               <img
                 className="w-7 h-6 rounded-full mt-3 mb-3"
-                src="/images/homepage/exper1.png"
+                src={leader1}
                 alt="user profile"
               />
               <h3 className="font-medium text-[rgba(29,33,48,1)] text-sm text-center">
@@ -350,7 +347,7 @@ function Home() {
               </p>
               <img
                 className="w-7 h-6 rounded-full mt-3 mb-3"
-                src="/images/homepage/exp2.png"
+                src={leader2}
                 alt="user profile"
               />
               <h3 className="font-medium text-[rgba(29,33,48,1)] text-sm text-center">
@@ -368,7 +365,7 @@ function Home() {
               </p>
               <img
                 className="w-7 h-6 rounded-full mt-3 mb-3"
-                src="/images/homepage/epx3.png"
+                src={leader3}
                 alt="user profile"
               />
               <h3 className="font-medium text-[rgba(29,33,48,1)] text-sm text-center">

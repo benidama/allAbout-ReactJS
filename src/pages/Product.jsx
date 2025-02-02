@@ -1,5 +1,22 @@
 import React from "react";
 import divider from "/images/homepage/Divider.png";
+import bg1 from "/images/product/75c046f145a6be2885be65e4235d2723.png";
+import logo1 from "/images/homepage/Logo 1.jpg";
+import logo2 from "/images/homepage/Logo 2.jpg";
+import logo3 from "/images/homepage/Logo 3.jpg";
+import logo4 from "/images/homepage/Logo 4.jpg";
+import logo5 from "/images/homepage/Logo 5.jpg";
+import icon1 from "/images/product/Icon.png";
+import icon2 from "/images/product/Icon1.png";
+import icon3 from "/images/product/Icon2.png";
+import icon4 from "/images/product/Icon3.png";
+import icon5 from "/images/product/Icon4.png";
+import icon6 from "/images/product/Icon5.png";
+import data1 from "/images/product/img2.png";
+import data2 from "/images/product/img3.png";
+import feat1 from "/images/homepage/feat1.jpg";
+import feat2 from "/images/homepage/feat2.jpg";
+import feat3 from "/images/homepage/feat3.jpg";
 
 function Product() {
   return (
@@ -26,7 +43,7 @@ function Product() {
           <div className="flex justify-center items-center w-[650px]">
             <img
               className="w-[630px] h-[290px] border-[rgba(224,228,252,1)] border-[2px] rounded-2xl"
-              src="/images/product/75c046f145a6be2885be65e4235d2723.png"
+              src={bg1}
               alt="dashboard overview"
             />
           </div>
@@ -34,28 +51,28 @@ function Product() {
         <div className="flex flex-row justify-between items-center gap-32 mb-14">
           <img
             className="w-28 h-8"
-            src="/images/homepage/Logo 1.jpg"
+            src={logo1}
             alt="One of our company logos"
           />
           <img
             className="w-28 h-8"
-            src="/images/homepage/Logo 2.jpg"
+            src={logo2}
             alt="One of our
           company logos"
           />
           <img
             className="w-28 h-8"
-            src="/images/homepage/Logo 3.jpg"
+            src={logo3}
             alt="One of our company logos"
           />
           <img
             className="w-28 h-8"
-            src="/images/homepage/Logo 4.jpg"
+            src={logo4}
             alt="One of our company logos"
           />
           <img
             className="w-28 h-8"
-            src="/images/homepage/Logo 5.jpg"
+            src={logo5}
             alt="One of our company logos"
           />
         </div>
@@ -81,7 +98,7 @@ function Product() {
               <div className="flex flex-col gap-3">
                 <img
                   className="w-10"
-                  src="/images/product/Icon.png"
+                  src={icon1}
                   alt="User first confirmation"
                 />
 
@@ -96,7 +113,7 @@ function Product() {
               <div className="flex flex-col gap-3">
                 <img
                   className="w-10"
-                  src="/images/product/Icon1.png"
+                  src={icon2}
                   alt="User first confirmation"
                 />
 
@@ -111,7 +128,7 @@ function Product() {
               <div className="flex flex-col gap-3">
                 <img
                   className="w-10"
-                  src="/images/product/Icon2.png"
+                  src={icon3}
                   alt="User first confirmation"
                 />
 
@@ -128,7 +145,7 @@ function Product() {
               <div className="flex flex-col gap-3">
                 <img
                   className="w-10"
-                  src="/images/product/Icon3.png"
+                  src={icon4}
                   alt="User first confirmation"
                 />
 
@@ -143,7 +160,7 @@ function Product() {
               <div className="flex flex-col gap-3">
                 <img
                   className="w-10"
-                  src="/images/product/Icon4.png"
+                  src={icon5}
                   alt="User first confirmation"
                 />
 
@@ -158,7 +175,7 @@ function Product() {
               <div className="flex flex-col gap-3">
                 <img
                   className="w-10"
-                  src="/images/product/Icon5.png"
+                  src={icon6}
                   alt="User first confirmation"
                 />
 
@@ -189,7 +206,7 @@ function Product() {
           <div>
             <img
               className="w-[490px] h-[320px]"
-              src="/images/product/img2.png"
+              src={data1}
               alt="shape of our results"
             />
           </div>
@@ -198,7 +215,7 @@ function Product() {
           <div>
             <img
               className="w-[490px] h-[320px]"
-              src="/images/product/img3.png"
+              src={data2}
               alt="shape of our results"
             />
           </div>
@@ -232,7 +249,7 @@ function Product() {
           <div>
             <img
               className="w-[490px] h-[320px]"
-              src="/images/product/img3.png"
+              src={data2}
               alt="shape of our results"
             />
           </div>
@@ -242,7 +259,7 @@ function Product() {
           <div>
             <img
               className="w-[490px] h-[320px]"
-              src="/images/product/img4.png"
+              src={data2}
               alt="shape of our results"
             />
           </div>
@@ -267,11 +284,7 @@ function Product() {
           </div>
           <div className="flex flex-row justify-center items-center bg-[rgba(215,152,225,0.15)] p-10 rounded-xl">
             <div className="flex flex-col gap-3">
-              <img
-                className="w-8"
-                src="/images/homepage/feat1.jpg"
-                alt="feature logo"
-              />
+              <img className="w-8" src={feat1} alt="feature logo" />
 
               <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[310px]">
                 Advanced 256-bit encryption
@@ -283,11 +296,7 @@ function Product() {
             </div>
             <img className="pr-6 h-36" src={divider} alt="Divider logo" />
             <div className="flex flex-col gap-3">
-              <img
-                className="w-8"
-                src="/images/homepage/feat2.jpg"
-                alt="feature logo"
-              />
+              <img className="w-8" src={feat2} alt="feature logo" />
               <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[255px]">
                 Simple collaboration tools
               </h1>
@@ -298,11 +307,7 @@ function Product() {
             </div>
             <img className="pr-6 h-36" src={divider} alt="Divider logo" />
             <div className="flex flex-col gap-3">
-              <img
-                className="w-8"
-                src="/images/homepage/feat3.jpg"
-                alt="feature logo"
-              />
+              <img className="w-8" src={feat3} alt="feature logo" />
               <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[270px]">
                 Customizable AI features
               </h1>

@@ -6,6 +6,9 @@ import post3 from "/images/blog/3.png";
 import post4 from "/images/blog/4.png";
 import post5 from "/images/blog/5.png";
 import post6 from "/images/blog/6.png";
+import post7 from "/images/blog/7.png";
+import post8 from "/images/blog/8.png";
+import post9 from "/images/blog/9.png";
 
 function Blog() {
   return (
@@ -170,7 +173,7 @@ function Blog() {
             <div className="flex flex-col justify-center items-start gap-2">
               <img
                 className="w-[360px] h-[230px] rounded-xl"
-                src="/images/blog/7.png"
+                src={post7}
                 alt="Recurring post"
               />
               <h2 className="font-medium text-[rgba(29,33,48,1)] text-xl w-[350px] leading-5">
@@ -188,7 +191,7 @@ function Blog() {
             <div className="flex flex-col justify-center items-start gap-2">
               <img
                 className="w-[360px] h-[230px] rounded-xl"
-                src="/images/blog/8.png"
+                src={post8}
                 alt="Conversions post"
               />
               <h2 className="font-medium text-[rgba(29,33,48,1)] text-xl w-[350px] leading-5">
@@ -206,7 +209,7 @@ function Blog() {
             <div className="flex flex-col justify-center items-start gap-2">
               <img
                 className="w-[360px] h-[230px] rounded-xl"
-                src="/images/blog/9.png"
+                src={post9}
                 alt="automation post"
               />
               <h2 className="font-medium text-[rgba(29,33,48,1)] text-xl w-[350px] leading-5">
