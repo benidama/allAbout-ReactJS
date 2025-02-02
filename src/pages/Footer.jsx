@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import fb from "/images/Facebook.png";
 import ig from "/images/Instagram.png";
 import x from "/images/Twitter.png";
@@ -18,40 +19,40 @@ function Footer() {
             </li>
 
             <li>
-              <a
+              <Link
                 className="text-[rgba(255,255,255,1)] font-light text-xs"
-                href="http://"
+                to="/about"
                 target="_blank"
               >
                 Why Choose us
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="text-[rgba(255,255,255,1)] font-light text-xs"
-                href="http://"
+                href="/about"
                 target="_blank"
               >
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="text-[rgba(255,255,255,1)] font-light text-xs"
-                href="http://"
+                to="/price"
                 target="_blank"
               >
                 Pricing
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="text-[rgba(255,255,255,1)] font-light text-xs"
-                href="http://"
+                to="/blog"
                 target="_blank"
               >
                 Testimonial
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -64,40 +65,40 @@ function Footer() {
               </h1>
             </li>
             <li>
-              <a
+              <Link
                 className="text-[rgba(255,255,255,1)] font-light text-xs"
-                href="http://"
+                to="/about"
                 target="_blank"
               >
                 Privacy Policy
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="text-[rgba(255,255,255,1)] font-light text-xs"
-                href="http://"
+                to="/about"
                 target="_blank"
               >
                 Terms and Condition
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="text-[rgba(255,255,255,1)] font-light text-xs"
-                href="http://"
+                to="/blog"
                 target="_blank"
               >
                 Blog
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="text-[rgba(255,255,255,1)] font-light text-xs"
-                href="http://"
+                to="/contact"
                 target="_blank"
               >
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -110,49 +111,49 @@ function Footer() {
               </h1>
             </li>
             <li>
-              <a
+              <Link
                 className="text-[rgba(255,255,255,1)] font-light text-xs"
-                href="http://"
+                to="/"
                 target="_blank"
               >
-                Project managment
-              </a>
+                Project management
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="text-[rgba(255,255,255,1)] font-light text-xs"
-                href="http://"
+                to="/post"
                 target="_blank"
               >
                 Time tracker
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="text-[rgba(255,255,255,1)] font-light text-xs"
-                href="http://"
+                to="/post"
                 target="_blank"
               >
                 Time schedule
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="text-[rgba(255,255,255,1)] font-normal text-xs"
-                href="http://"
+                to="/blog"
                 target="_blank"
               >
                 Lead generate
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="text-[rgba(255,255,255,1)] font-light text-xs"
-                href="http://"
+                to="/blog"
                 target="_blank"
               >
                 Remote Collaboration
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -184,10 +185,27 @@ function Footer() {
         <h4 className="text-[rgba(255,255,255,1)] font-light text-xs">
           © Copyright Finsweet 2022
         </h4>
-        <img src={fb} alt="Facebook logo" />
-        <img src={x} alt="Twitter logo" />
-        <img src={ig} alt="Instagram logo" />
-        <img src={linkedIn} alt="LinkedIn logo" />
+        <Link to="https://www.facebook.com/share/1HB7rqeN6Y/" target="_blank">
+          <img src={fb} alt="Facebook logo" />
+        </Link>
+        <Link
+          to="https://x.com/BenimanaJeanDa1?t=Yl_XBHHPZAWc8EXt7zr7Ag&s=09"
+          target="_blank"
+        >
+          <img src={x} alt="Twitter logo" />
+        </Link>
+        <Link
+          to="https://www.instagram.com/beni_dama?igsh=Y2ZwZTdtZGM1MTYw"
+          target="_blank"
+        >
+          <img src={ig} alt="Instagram logo" />
+        </Link>
+        <Link
+          to="https://www.linkedin.com/in/jean-damascene-benimana-9001b7209?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank"
+        >
+          <img src={linkedIn} alt="LinkedIn logo" />
+        </Link>
         <hr className="border-[rgba(136,136,136,1)] boInstagram logorder-[1px] w-[350px]" />
       </div>
     </footer>

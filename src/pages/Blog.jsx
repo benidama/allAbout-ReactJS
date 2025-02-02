@@ -1,4 +1,11 @@
 import React from "react";
+import overview from "/images/blog/1.png";
+import post1 from "/images/blog/1.png";
+import post2 from "/images/blog/2.png";
+import post3 from "/images/blog/3.png";
+import post4 from "/images/blog/4.png";
+import post5 from "/images/blog/5.png";
+import post6 from "/images/blog/6.png";
 
 function Blog() {
   return (
@@ -33,7 +40,7 @@ function Blog() {
           <div>
             <img
               className="w-[550px] h-[250px] rounded-2xl"
-              src="/images/blog/1.png"
+              src={overview}
               alt="overview of our project"
             />
           </div>
@@ -50,7 +57,7 @@ function Blog() {
             <div className="flex flex-col justify-center items-start gap-2">
               <img
                 className="w-[360px] h-[230px] rounded-xl"
-                src="/images/blog/1.png"
+                src={post1}
                 alt="automaker post"
               />
               <h2 className="font-medium text-[rgba(29,33,48,1)] text-xl w-[360px] leading-5">
@@ -68,7 +75,7 @@ function Blog() {
             <div className="flex flex-col justify-center items-start gap-2">
               <img
                 className="w-[360px] h-[230px] rounded-xl"
-                src="/images/blog/2.png"
+                src={post2}
                 alt="manager post"
               />
               <h2 className="font-medium text-[rgba(29,33,48,1)] text-xl w-[350px] leading-5">
@@ -86,7 +93,7 @@ function Blog() {
             <div className="flex flex-col justify-center items-start gap-2">
               <img
                 className="w-[360px] h-[230px] rounded-xl"
-                src="/images/blog/3.png"
+                src={post3}
                 alt="accountant post"
               />
               <h2 className="font-medium text-[rgba(29,33,48,1)] text-xl w-[350px] leading-5">
@@ -106,7 +113,7 @@ function Blog() {
             <div className="flex flex-col justify-center items-start gap-2">
               <img
                 className="w-[360px] h-[230px] rounded-xl"
-                src="/images/blog/4.png"
+                src={post4}
                 alt="Finance post"
               />
               <h2 className="font-medium text-[rgba(29,33,48,1)] text-xl w-[350px] leading-5">
@@ -124,7 +131,7 @@ function Blog() {
             <div className="flex flex-col justify-center items-start gap-2">
               <img
                 className="w-[360px] h-[230px] rounded-xl"
-                src="/images/blog/5.png"
+                src={post5}
                 alt="Auditor post"
               />
               <h2 className="font-medium text-[rgba(29,33,48,1)] text-xl w-[350px] leading-5">
@@ -143,7 +150,7 @@ function Blog() {
             <div className="flex flex-col justify-center items-start gap-2">
               <img
                 className="w-[360px] h-[230px] rounded-xl"
-                src="/images/blog/6.png"
+                src={post6}
                 alt="analyst post"
               />
               <h2 className="font-medium text-[rgba(29,33,48,1)] text-xl w-[350px] leading-5">
