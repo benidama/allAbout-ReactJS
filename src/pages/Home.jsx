@@ -23,16 +23,54 @@ import leader3 from "/images/homepage/epx3.png";
 function Home() {
   return (
     <div>
-      <header className="flex flex-col justify-center items-center">
+      <header className="flex flex-col justify-center items-center p-10">
         <div className="flex flex-col justify-center items-center gap-5 bg-gradient-to-b from-white via-teal-100 border-teal-100">
-          <h1 className="font-bold text-[rgba(29,33,48,1)] text-[40px] leading-10 text-center w-[530px]">
+          <h1 className="font-bold text-[rgba(29,33,48,1)] md:text-[40px] text-[25px] leading-10 text-center md:w-[530px]  sm:w[370px]">
             The Best Software to Grow your Sales and Services
           </h1>
-          <p className="text-sm w-[570px] text-center">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat.
+          <p className="text-sm pr-10 md:pl-48 text-center pl-10">
+            Welcome to Quintus, we are ready to give you high-quality fashion,
+            eco-friendly home goods, innovative tech gadgets, etc. At Quintus,
+            we are passionate about providing our customers with exceptional
+            products, affordable prices, sustainable options, or a seamless
+            shopping experience. Quintus was founded in 2021 by Joanes Quintus
+            with a simple goal to create a platform for unique, handmade goods
+            or provide innovative solutions for everyday needs. What started as
+            a small idea has grown into a thriving online store, thanks to the
+            support of our amazing customers.
           </p>
+          <h1 className="font-bold text-[rgba(29,33,48,1)] pl-10 text-[25px] leading-10 text-center ">
+            Our mission
+          </h1>
+          <p className="text-sm pr-10 md:pl-48 pl-10 text-center">
+            Our mission is to make premium products accessible to everyone,
+            empower sustainable living, or revolutionize the way people shop
+            online. We believe in core values, e.g., quality, customer
+            satisfaction, innovation, or community and strive to reflect these
+            values in everything we do.
+          </p>
+          <div className="text-sm pr-10 md:pl-48 pl-10 flex flex-col justify-center items-start">
+            <h1 className="font-bold p-10 text-[rgba(29,33,48,1)] text-[25px] md:pl-60 leading-10 text-center ">
+              Why Choose Us?
+            </h1>
+            <p className="text-sm pr-10 md:pl-48 pl-5 text-center">
+              Quality Assurance: Every product is carefully selected and tested
+              to ensure it meets our standards.
+            </p>
+            <p className="text-sm pr-10 md:pl-48 pl-5 text-center">
+              Affordable Prices: We believe that great products shouldn’t come
+              with a hefty price tag.
+            </p>
+            <p className="text-sm pr-10 md:pl-48 pl-5 text-center">
+              Sustainability: eco-friendly materials, carbon-neutral shipping,
+              etc.
+            </p>
+            <p className="text-sm pr-10 md:pl-48 pl-5 text-center">
+              Exceptional Customer Service: Our team is always ready to assist
+              you with any questions or concerns.
+            </p>
+          </div>
+
           <form
             action=""
             className="bg-[rgba(255,255,255,1)] flex justify-between items-center flex-row h-12 w-[390px] pl-3 pr-1 rounded-lg mb-7"
@@ -50,7 +88,7 @@ function Home() {
         </div>
         <div className="flex justify-center items-center mt-7">
           <img
-            className="w-[890px] h-[646px] border-[rgba(224,228,252,1)] border-[2px] rounded-2xl"
+            className="md:w-[890px] w-[380px] h-[646px] border-[rgba(224,228,252,1)] border-[2px] rounded-2xl"
             src={bg}
             alt="dashboard overview"
           />
@@ -62,11 +100,11 @@ function Home() {
             <h1 className="text-gradient-[from-#373FFF-to-#3ACAF8]">
               High-quality
             </h1>
-            <h1 className="font-bold text-[rgba(29,33,48,1)] text-[40px] leading-10 text-center w-[530px]">
+            <h1 className="font-bold text-[rgba(29,33,48,1)] text-[30px] md:text-[40px] leading-10 text-center w-[380px] md:w-[530px]">
               We have the Best Solution for your Business
             </h1>
           </div>
-          <div className="flex flex-row justify-center items-center bg-[rgba(224,228,252,1)] p-10 rounded-xl">
+          <div className="flex p-5 flex-col md:flex-row justify-center items-center bg-[rgba(224,228,252,1)] md:p-10 rounded-xl">
             <div className="flex flex-col gap-3">
               <img
                 className="w-10"
@@ -110,26 +148,26 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-row justify-center items-center mt-14 mb-14">
-          <div className="flex flex-col justify-center items-start gap-3 w-[500px]">
+        <div className="flex flex-col md:flex-row justify-center items-center mt-14 mb-14">
+          <div className="flex flex-col justify-center items-start gap-3 w-[380px] md:w-[500px]">
             <h3 className="text-left text-[16px] text-blue-950">
               Why should you work with us?
             </h3>
-            <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[310px]">
+            <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left md:w-[310px]">
               To upscale your business to the next level
             </h1>
-            <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-4 text-left w-[415px]">
+            <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-4 text-left md:w-[415px]">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua invidunt ut labore.
             </p>
           </div>
-          <div className="flex flex-col justify-center items-center gap-4">
+          <div className="flex flex-col  justify-center items-center gap-4">
             <div className="flex flex-row justify-center items-center gap-2">
               <div className="w-6 bg-[rgba(255,172,172,1)] rounded-full justify-center flex items-center h-6">
                 <img className="w-6 h-6" src={arrow} alt="Arrow logo" />
               </div>
-              <p className="font-medium text-[rgba(29,33,48,1)] text-[14px] leading-5 text-left w-[415px]">
+              <p className="font-medium text-[rgba(29,33,48,1)] text-[14px] leading-5 text-left md:w-[415px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod.
               </p>
@@ -139,7 +177,7 @@ function Home() {
               <div className="w-6 bg-[rgba(255,172,172,1)] rounded-full justify-center flex items-center h-6">
                 <img className="w-6 h-6" src={arrow} alt="Arrow logo" />
               </div>
-              <p className="font-medium text-[rgba(29,33,48,1)] text-[14px] leading-5 text-left w-[415px]">
+              <p className="font-medium text-[rgba(29,33,48,1)] text-[14px] leading-5 text-left md:w-[415px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod.
               </p>
@@ -149,19 +187,19 @@ function Home() {
               <div className="w-6 bg-[rgba(255,172,172,1)] rounded-full justify-center flex items-center h-6">
                 <img className="w-6 h-6" src={arrow} alt="Arrow logo" />
               </div>
-              <p className="font-medium text-[rgba(29,33,48,1)] text-[14px] leading-5 text-left w-[415px]">
+              <p className="font-medium text-[rgba(29,33,48,1)] text-[14px] leading-5 text-left md:w-[415px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod.
               </p>
             </div>
           </div>
         </div>
-        <div className="flex flex-row justify-center items-center pt-7 pb-7 bg-gradient-to-r from-blue-400 to-blue-200 gap-10">
+        <div className="flex flex-col md:flex-row justify-center items-center pt-7 pb-7 bg-gradient-to-r from-blue-400 to-blue-200 gap-10">
           <div className="flex flex-col justify-center items-start gap-5">
-            <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[310px]">
+            <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left md:w-[310px]">
               More impressions, more conversions
             </h1>
-            <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-5 text-left w-[415px]">
+            <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-5 text-left md:w-[415px]">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua invidunt ut labore.
@@ -172,13 +210,13 @@ function Home() {
           </div>
           <div>
             <img
-              className="w-[545px] h-[300px]"
+              className="md:w-[545px] h-[300px] w-[380px]"
               src={bg}
               alt="It shows why our company is the best"
             />
           </div>
         </div>
-        <div className="flex flex-row justify-between items-center pt-8 pb-8 ml-40 mr-20">
+        <div className="flex flex-col md:flex-row justify-between items-center pt-8 pb-8 md:ml-40 md:mr-20">
           <img
             className="w-28 h-8"
             src={logo1}
@@ -206,15 +244,15 @@ function Home() {
           />
         </div>
 
-        <div className="flex flex-row justify-center items-center mt-14 mb-14">
-          <div className="flex flex-col justify-center items-start gap-3 w-[500px]">
+        <div className="flex flex-col md:flex-row justify-center items-center mt-14 mb-14">
+          <div className="flex flex-col justify-center items-start gap-3 md:w-[500px]">
             <h3 className="text-left text-[16px] text-blue-950">
               Discover More
             </h3>
-            <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[310px]">
+            <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left md:w-[310px]">
               Analyze your sales and marketing leads
             </h1>
-            <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-4 text-left w-[415px]">
+            <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-4 text-left md:w-[415px]">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua invidunt ut labore.
@@ -226,10 +264,10 @@ function Home() {
                 <img className="w-4" src={more1} alt="logo represents sales" />
               </div>
               <div className="flex flex-col justify-center items-center">
-                <h3 className="font-medium text-[rgba(29,33,48,1)] text-[14px] leading-5 text-left w-[415px]">
+                <h3 className="font-medium text-[rgba(29,33,48,1)] text-[14px] leading-5 text-left md:w-[415px]">
                   Sales Tracking
                 </h3>
-                <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 text-left w-[415px]">
+                <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 text-left md:w-[415px]">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
                 </p>
               </div>
@@ -244,10 +282,10 @@ function Home() {
                 />
               </div>
               <div className="flex flex-col justify-center items-center">
-                <h3 className="font-medium text-[rgba(29,33,48,1)] text-[14px] leading-5 text-left w-[415px]">
+                <h3 className="font-medium text-[rgba(29,33,48,1)] text-[14px] leading-5 text-left md:w-[415px]">
                   Project Management
                 </h3>
-                <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 text-left w-[415px]">
+                <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 text-left md:w-[415px]">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
                 </p>
               </div>
@@ -262,10 +300,10 @@ function Home() {
                 />
               </div>
               <div className="flex flex-col justify-center items-center">
-                <h3 className="font-medium text-[rgba(29,33,48,1)] text-[14px] leading-5 text-left w-[415px]">
+                <h3 className="font-medium text-[rgba(29,33,48,1)] text-[14px] leading-5 text-left md:w-[415px]">
                   Activity Report
                 </h3>
-                <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 text-left w-[415px]">
+                <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 text-left md:w-[415px]">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
                 </p>
               </div>
@@ -275,11 +313,11 @@ function Home() {
 
         <div className="flex flex-col justify-center items-center gap-2">
           <div className="flex justify-center items-center">
-            <h1 className="font-bold text-[rgba(29,33,48,1)] mb-2 text-[40px] text-center">
+            <h1 className="font-bold text-[rgba(29,33,48,1)] mb-2 text-[25px] md:text-[40px] text-center">
               Features
             </h1>
           </div>
-          <div className="flex flex-row justify-center items-center bg-[rgba(215,152,225,0.15)] p-10 rounded-xl">
+          <div className="flex flex-col md:flex-row justify-center items-center bg-[rgba(215,152,225,0.15)] p-10 rounded-xl">
             <div className="flex flex-col gap-3">
               <img className="w-8" src={feat1} alt="feature logo" />
 
@@ -291,7 +329,11 @@ function Home() {
                 diam nonumy eirmod tempor.
               </p>
             </div>
-            <img className="pr-6 h-36" src={divider} alt="Divider logo" />
+            <img
+              className="pr-6 h-36 hidden md:block"
+              src={divider}
+              alt="Divider logo"
+            />
             <div className="flex flex-col gap-3">
               <img className="w-8" src={feat2} alt="feature logo" />
               <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[255px]">
@@ -302,7 +344,11 @@ function Home() {
                 diam nonumy eirmod tempor.
               </p>
             </div>
-            <img className="pr-6 h-36" src={divider} alt="Divider logo" />
+            <img
+              className="pr-6 h-36 hidden md:block"
+              src={divider}
+              alt="Divider logo"
+            />
             <div className="flex flex-col gap-3">
               <img className="w-8" src={feat3} alt="feature logo" />
               <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[270px]">
@@ -316,10 +362,10 @@ function Home() {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center mt-14 mb-14">
-          <h1 className="font-bold text-[rgba(29,33,48,1)] mb-7 text-[40px] text-center leading-10 w-[630px]">
+          <h1 className="font-bold text-[rgba(29,33,48,1)] mb-7 text-[25px] md:text-[40px] text-center leading-10 md:w-[630px]">
             The stunning results our customers have experienced
           </h1>
-          <div className="flex flex-row justify-center items-center gap-10">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-10">
             <div className="flex flex-col justify-center items-center border-[2px] border-[rgba(97,153,237,0.26)] rounded-lg p-8">
               <p className="font-medium text-[rgba(29,33,48,1)] text-xs leading-4 text-center w-[199px]">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
@@ -377,8 +423,8 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center gap-5 pb-14 bg-gradient-to-t from-cyan-50 to-yellow-50">
-          <h1 className="font-bold text-[rgba(29,33,48,1)] text-[40px] text-center leading-10 w-[630px]">
+        <div className="flex flex-col justify-center items-center  gap-5 pb-14 bg-gradient-to-t from-cyan-50 to-yellow-50">
+          <h1 className="font-bold text-[rgba(29,33,48,1)] text-[25px] md:text-[40px] text-center leading-10 w-[380px] md:w-[630px]">
             Are you ready to grow your business with us?
           </h1>
           <p className="font-normal text-[rgba(29,33,48,1)] text-xs text-center">
