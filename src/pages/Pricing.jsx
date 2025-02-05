@@ -11,10 +11,10 @@ function Pricing() {
   return (
     <div>
       <header className="flex flex-col justify-center items-center gap-5 text-left">
-        <h1 className="font-bold text-[rgba(29,33,48,1)] text-[35px] leading-10 text-center w-[395px]">
+        <h1 className="font-bold text-[rgba(29,33,48,1)] text-[25px] md:text-[35px] leading-10 text-center w-[380px] md:w-[450px]">
           Pricing plans that suit you
         </h1>
-        <p className="font-normal text-xs text-center leading-4 w-[390px]">
+        <p className="font-normal text-xs text-center leading-4 w-[390px] pb-3">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor.
         </p>
@@ -29,9 +29,9 @@ function Pricing() {
               Yearly
             </button>
           </div>
-          <div className="flex flex-row justify-center items-center">
+          <div className="flex flex-col md:flex-row justify-center items-center">
             <div className="flex flex-col justify-center items-center">
-              <div className="flex flex-col justify-center items-start rounded-2xl p-5 m-8 w-[251px] bg-[rgba(255,255,255,1)] gap-4">
+              <div className="flex flex-col justify-center items-start rounded-2xl p-5 m-4 md:m-8 w-[251px] bg-[rgba(255,255,255,1)] gap-4">
                 <div className="flex flex-row justify-center items-center gap-3">
                   <img className="w-10" src={reg6} alt="Regular icon" />
                   <div className="flex flex-col justify-center items-start">
@@ -86,7 +86,7 @@ function Pricing() {
             </div>
 
             <div className="flex flex-col justify-center items-center">
-              <div className="flex flex-col justify-center items-start p-5 m-8 w-[251px] rounded-2xl bg-[rgba(240,242,254,1)] gap-4">
+              <div className="flex flex-col justify-center items-start p-5 m-4 md:m-8 w-[251px] rounded-2xl bg-[rgba(240,242,254,1)] gap-4">
                 <div className="flex flex-row justify-center items-center gap-3">
                   <img className="w-10" src={reg8} alt="Regular icon" />
                   <div className="flex flex-col justify-center items-start">
@@ -143,7 +143,7 @@ function Pricing() {
             </div>
 
             <div className="flex flex-col justify-center items-center">
-              <div className="flex flex-col justify-center p-5 items-start m-8 w-[251px] rounded-2xl bg-[rgba(255,255,255,1)] gap-4">
+              <div className="flex flex-col justify-center p-5 items-start m-4 md:m-8 w-[251px] rounded-2xl bg-[rgba(255,255,255,1)] gap-4">
                 <div className="flex flex-row justify-center items-center gap-3">
                   <img className="w-10" src={reg9} alt="Regular icon" />
                   <div className="flex flex-col justify-center items-start">
@@ -198,9 +198,9 @@ function Pricing() {
             </div>
           </div>
         </div>
-        <div className="bg-[rgba(240,242,254,1)] flex flex-row justify-center relative items-center p-10 ml-36 mr-36 rounded-3xl">
-          <div className="flex flex-col justify-start gap-5 relative bottom-28 items-start w-[428px]">
-            <h1 className="font-bold text-[rgba(29,33,48,1)] text-[35px] leading-8 text-left w-[395px]">
+        <div className="bg-[rgba(240,242,254,1)] flex flex-col md:flex-row justify-center relative items-center md:p-10 p-4 ml-1 md:ml-36 md:mt-8 mr-3 md:mr-36 md:rounded-3xl">
+          <div className="flex flex-col justify-center md:justify-start gap-5 pl-5 relative bottom-3 md:bottom-28 items-start md:w-[428px]">
+            <h1 className="font-bold text-[rgba(29,33,48,1)] text-[25px] md:text-[35px] leading-8 text-left w-[395px]">
               Frequestly Asked Questions
             </h1>
             <p className="font-normal text-xs leading-4 w-[390px] text-[rgba(29,33,48,1)]">
@@ -208,7 +208,7 @@ function Pricing() {
               nonumy eirmod tempor invidunt.
             </p>
           </div>
-          <div className="flex flex-col justify-between w-[485px] gap-2">
+          <div className="flex flex-col justify-between md:w-[485px] gap-2">
             <div className="flex flex-col justify-between gap-3 rounded-2xl p-5 bg-[rgba(255,255,255,1)]">
               <div className="flex flex-row justify-between">
                 <h3 className="font-medium text-xl text-[rgba(29,33,48,1)]">
@@ -216,7 +216,7 @@ function Pricing() {
                 </h3>
                 <img className="h-4" src={expander1} alt="Expander sign" />
               </div>
-              <p className="font-normal text-xs leading-4 w-[465px] text-[rgba(29,33,48,1)]">
+              <p className="font-normal text-xs leading-4 md:w-[465px] text-[rgba(29,33,48,1)]">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                 diam nonumy eirmod tempor invidunt ut labore et dolore magna
                 aliquyam erat, sed diam voluptua.
@@ -243,7 +243,7 @@ function Pricing() {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center gap-5 w-screen pt-10 pb-14 bg-gradient-to-t from-cyan-50 to-yellow-50">
-          <h1 className="font-bold text-[rgba(29,33,48,1)] text-[40px] text-center leading-10 w-[630px]">
+          <h1 className="font-bold text-[rgba(29,33,48,1)] text-[25px] md:text-[40px] text-center leading-10 md:w-[630px]">
             Are you ready to grow your business with us?
           </h1>
           <p className="font-normal text-[rgba(29,33,48,1)] text-xs text-center">

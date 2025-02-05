@@ -9,23 +9,23 @@ const PostBlog = () => {
     <div className="flex flex-col justify-center">
       <main>
         <div className="flex flex-col justify-center items-center pt-14 pb-7 gap-3 bg-cyan-100/15">
-          <h1 className="font-bold text-[rgba(29,33,48,1)] text-[35px] leading-10 text-cente w-[510px]">
+          <h1 className="font-bold text-[rgba(29,33,48,1)] text-[25px] md:text-[35px] leading-10 text-center md:w-[510px]">
             New invoicing features to help you get paid faster
           </h1>
           <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 text-center">
             Luke Matthews l November 8, 2021
           </p>
           <img
-            className="w-[1200px] h-[510px] rounded-2xl rounded-t-2xl mt-5"
+            className="md:w-[1200px] h-[275px] w-[360px]h-[510px] rounded-2xl rounded-t-2xl mt-5"
             src={bg}
             alt="six girls discuss on payment process"
           />
         </div>
-        <article className="flex flex-col justify-center items-center">
-          <h1 className="font-bold text-[rgba(29,33,48,1)] text-[35px] text-cente">
+        <article className="flex flex-col justify-center items-center ">
+          <h1 className="font-bold text-[rgba(29,33,48,1)] text-[25px] md:text-[35px] text-center">
             This is a blog post headline
           </h1>
-          <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 text-left w-[570px]">
+          <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 text-left w-[360px] md:w-[570px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
             dignissim dolor et dui bibendum aliquam. Mauris a quam sit amet dui
             auctor dictum eget a elit. Pellentesque varius diam risus, ut
@@ -36,7 +36,7 @@ const PostBlog = () => {
             Etiam ornare nibh vel dui egestas, eu posuere metus convallis.
           </p>
           <br />
-          <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 text-left w-[570px]">
+          <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 text-left w-[360px] md:w-[570px]">
             Ut non urna a odio condimentum dictum. Proin egestas erat a orci
             ultrices, vitae bibendum libero posuere. Quisque laoreet tincidunt
             justo. Vestibulum congue dictum libero finibus vehicula. Aliquam
@@ -53,7 +53,7 @@ const PostBlog = () => {
           <h2 className="font-bold text-[rgba(29,33,48,1)] text-[25px] text-cente">
             This is a small blog post headline
           </h2>
-          <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 text-left w-[570px]">
+          <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 text-left w-[360px] md:w-[570px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
             dignissim dolor et dui bibendum aliquam. Mauris a quam sit amet dui
             auctor dictum eget a elit. Pellentesque varius diam risus, ut
@@ -64,14 +64,14 @@ const PostBlog = () => {
             Etiam ornare nibh vel dui egestas, eu posuere metus convallis.
           </p>
           <br />
-          <blockquote className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 text-left w-[500px]">
+          <blockquote className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 text-left w-[360px] md:w-[500px]">
             Ut non urna a odio condimentum dictum. Proin egestas erat a orci
             ultrices, vitae bibendum libero posuere. Quisque laoreet tincidunt
             justo. Vestibulum congue dictum libero finibus vehicula. Aliquam
             nisi velit, ultricies eget enim vel, venenatis mollis ante.
           </blockquote>
           <br />
-          <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 text-left w-[570px]">
+          <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 text-left w-[360px] md:w-[570px]">
             Ut non urna a odio condimentum dictum. Proin egestas erat a orci
             ultrices, vitae bibendum libero posuere. Quisque laoreet tincidunt
             justo. Vestibulum congue dictum libero finibus vehicula. Aliquam
@@ -86,10 +86,10 @@ const PostBlog = () => {
             at nisi sed elit gravida malesuada.
           </p>
         </article>
-        <h1 className="font-bold text-[rgba(29,33,48,1)] text-[35px] text-center mt-14 mb-7">
+        <h1 className="font-bold text-[rgba(29,33,48,1)] text-[25px] md:text-[35px] text-center mt-14 mb-7">
           Read more posts
         </h1>
-        <div className="flex flex-row justify-center items-center gap-4 mb-10">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-10">
           <div className="flex flex-col justify-center items-start gap-2">
             <img
               className="w-[360px] h-[230px] rounded-xl"
@@ -144,11 +144,11 @@ const PostBlog = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center gap-5 w-screen pt-2 pb-14 bg-gradient-to-t from-cyan-50 to-yellow-50">
-          <h1 className="font-bold text-[rgba(29,33,48,1)] text-[40px] text-center leading-10 w-[630px]">
+        <div className="flex flex-col justify-center items-center ml-3 mr-3 gap-5 w-screen pt-2 pb-8 md:pb-14 bg-gradient-to-t from-cyan-50 to-yellow-50">
+          <h1 className="font-bold text-[rgba(29,33,48,1)] text-[25px] md:text-[40px] text-center leading-10 md:w-[630px]">
             Are you ready to grow your business with us?
           </h1>
-          <p className="font-normal text-[rgba(29,33,48,1)] text-xs text-center">
+          <p className="font-normal text-[rgba(29,33,48,1)] text-xs text-center p-1">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy.
           </p>
