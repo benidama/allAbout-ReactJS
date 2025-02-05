@@ -21,13 +21,13 @@ import feat3 from "/images/homepage/feat3.jpg";
 function Product() {
   return (
     <div>
-      <header className="flex flex-col justify-center items-center pt-11 gap-11 bg-gradient-to-r from-yellow-50 to-cyan-100">
-        <div className="flex flex-row justify-center items-center">
-          <div className="flex flex-col justify-center items-start gap-5 w-[480px] text-left">
+      <header className="flex flex-col justify-center items-center pt-6 md:pt-11 gap-7 md:gap-11 bg-gradient-to-r from-yellow-50 to-cyan-100">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-3">
+          <div className="flex flex-col justify-center items-start gap-5 sm:w-[396px] md:w-[480px] text-left">
             <h1 className="font-bold text-[rgba(29,33,48,1)] text-[35px] leading-10 text-left w-[395px]">
               Grow your Sales and Services
             </h1>
-            <p className="font-normal text-xs leading-4 w-[390px]">
+            <p className="font-normal text-xs leading-4 w-[390px] p-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
@@ -40,15 +40,15 @@ function Product() {
               </button>
             </div>
           </div>
-          <div className="flex justify-center items-center w-[650px]">
+          <div className="flex justify-center items-center w-[380px] md:w-[650px]">
             <img
-              className="w-[630px] h-[290px] border-[rgba(224,228,252,1)] border-[2px] rounded-2xl"
+              className="md:w-[630px]  h-[290px] border-[rgba(224,228,252,1)] border-[2px] rounded-2xl"
               src={bg1}
               alt="dashboard overview"
             />
           </div>
         </div>
-        <div className="flex flex-row justify-between items-center gap-32 mb-14">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-5 md:gap-32 mb-14">
           <img
             className="w-28 h-8"
             src={logo1}
@@ -80,20 +80,20 @@ function Product() {
       <main className="flex flex-col justify-center items-center gap-2">
         <div
           div
-          className="flex flex-col justify-center items-center bg-gradient-to-r from-cyan-50 to-slate-200 w-screen"
+          className="flex flex-col justify-center items-center bg-gradient-to-r from-cyan-50 to-slate-200 w-[397px] md:w-screen"
         >
           <div>
-            <h1 className="font-bold text-[rgba(29,33,48,1)] text-[40px] mt-28 mb-11 leading-10 text-center w-[670px]">
+            <h1 className="font-bold text-[rgba(29,33,48,1)] text-[25px] md:text-[40px] mt-11 md:mt-28 mb-11 leading-10 text-center w-[380px] md:w-[670px]">
               Get the best out of your company with our service
             </h1>
           </div>
           <div
             div
-            className="flex flex-col justify-center items-center w-screen mr-[93px] gap-11 pt-14 pb-12 bg-[rgba(255,255,255,0.69)] rounded-tr-3xl"
+            className="flex flex-col justify-center items-center w-[390px] md:w-screen md:mr-[93px] gap-5 md:gap-11 pt-14 pb-12 bg-[rgba(255,255,255,0.69)] md:rounded-tr-3xl"
           >
             <div
               div
-              className="flex flex-row justify-center items-center gap-2"
+              className="flex flex-col md:flex-row justify-center items-center gap-2"
             >
               <div className="flex flex-col gap-3">
                 <img
@@ -141,7 +141,7 @@ function Product() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row justify-center items-center">
+            <div className="flex flex-col md:flex-row justify-center items-center">
               <div className="flex flex-col gap-3">
                 <img
                   className="w-10"
@@ -179,7 +179,7 @@ function Product() {
                   alt="User first confirmation"
                 />
 
-                <h1 className="font-medium text-[rgba(29,33,48,1)] text-[18px] leading-5 text-left w-[310px]">
+                <h1 className="font-medium text-[rgba(29,33,48,1)] text-[18px] leading-5 text-left md:w-[310px]">
                   Easy notes organization
                 </h1>
                 <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-4 text-left w-[285px]">
@@ -190,13 +190,13 @@ function Product() {
             </div>
           </div>
         </div>
-        <div className="flex flex-row justify-center items-center gap-16 pt-10 mb-10 mt-gradient-to-r from-cyan-50 to-slate-50">
-          <div className="flex flex-col justify-center items-start w-[470px] gap-5">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-16 pt-10 mb-10 mt-gradient-to-r from-cyan-50 to-slate-50 p-2">
+          <div className="flex flex-col justify-center items-start pl-3 md:w-[470px] gap-3 md:gap-5">
             <h3 className="text-sm text-left">Marketing insights</h3>
-            <h1 className="font-bold text-[rgba(29,33,48,1)] text-[35px] leading-8 text-left w-[395px]">
+            <h1 className="font-bold text-[rgba(29,33,48,1)] text-[25px] md:text-[35px] leading-8 text-left w-[395px]">
               Data-driven client feedback
             </h1>
-            <p className="font-bold text-[rgba(29,33,48,1)] text-xs leading-4 text-left w-[435px]">
+            <p className="font-bold text-[rgba(29,33,48,1)] text-xs leading-4 text-left w-[380px] md:w-[435px]">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua. At vero eos et accusam et justo duo
@@ -205,26 +205,26 @@ function Product() {
           </div>
           <div>
             <img
-              className="w-[490px] h-[320px]"
+              className="w-[380px] md:w-[490px] h-[320px]"
               src={data1}
               alt="shape of our results"
             />
           </div>
         </div>
-        <div className="flex flex-row justify-center items-center gap-16 pt-10 mb-10 mt-gradient-to-r from-cyan-50 to-slate-50">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-16 pt-4 md:pt-10 mb-4 md:mb-10 mt-gradient-to-r from-cyan-50 to-slate-50">
           <div>
             <img
-              className="w-[490px] h-[320px]"
+              className="w-[380px] md:w-[490px] h-[320px]"
               src={data2}
               alt="shape of our results"
             />
           </div>
-          <div className="flex flex-col justify-center items-start w-[470px] gap-5">
+          <div className="flex flex-col justify-center items-start w-[380px] md:w-[470px] gap-3 md:gap-5 p-2">
             <h3 className="text-sm text-left">Time tracker</h3>
-            <h1 className="font-bold text-[rgba(29,33,48,1)] text-[35px] leading-8 text-left w-[395px]">
+            <h1 className="font-bold text-[rgba(29,33,48,1)] text-[25px] md:text-[35px] leading-8 text-left w-[380px] md:w-[395px]">
               Track your project performance
             </h1>
-            <p className="font-bold text-[rgba(29,33,48,1)] text-xs leading-4 text-left w-[435px]">
+            <p className="font-bold text-[rgba(29,33,48,1)] text-xs leading-4 text-left w-[380px] md:w-[435px]">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua. At vero eos et accusam et justo duo
@@ -233,13 +233,13 @@ function Product() {
           </div>
         </div>
 
-        <div className="flex flex-row justify-center items-center gap-16 pt-10 mb-10 mt-gradient-to-r from-cyan-50 to-slate-50">
-          <div className="flex flex-col justify-center items-start w-[470px] gap-5">
+        <div className="flex flex-row justify-center items-center gap-6 md:gap-16 pt-4 md:pt-10 mb-4 md:mb-10 mt-gradient-to-r from-cyan-50 to-slate-50 p-2">
+          <div className="flex flex-col justify-center items-start md:w-[470px] gap-3 md:gap-5 pl-3">
             <h3 className="text-sm text-left">Lead Generation</h3>
-            <h1 className="font-bold text-[rgba(29,33,48,1)] text-[35px] leading-8 text-left w-[395px]">
+            <h1 className="font-bold text-[rgba(29,33,48,1)] text-[25px] md:text-[35px] leading-8 text-left md:w-[395px] w-[380px]">
               More leads that convert
             </h1>
-            <p className="font-bold text-[rgba(29,33,48,1)] text-xs leading-4 text-left w-[435px]">
+            <p className="font-bold text-[rgba(29,33,48,1)] text-xs leading-4 text-left w-[380px] md:w-[435px]">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua. At vero eos et accusam et justo duo
@@ -248,27 +248,27 @@ function Product() {
           </div>
           <div>
             <img
-              className="w-[490px] h-[320px]"
+              className="w-[280px] md:w-[490px] h-[320px] hidden md:block"
               src={data2}
               alt="shape of our results"
             />
           </div>
         </div>
 
-        <div className="flex flex-row justify-center items-center gap-16 pt-10 mb-10 mt-gradient-to-r from-cyan-50 to-slate-50">
+        <div className="flex flex-row justify-center items-center gap-6 md:gap-16 pt-4 md:pt-10 mb-4 md:mb-10 mt-gradient-to-r from-cyan-50 to-slate-50 p-2">
           <div>
             <img
-              className="w-[490px] h-[320px]"
+              className="w-[280px] md:w-[490px] h-[320px] hidden md:block"
               src={data2}
               alt="shape of our results"
             />
           </div>
-          <div className="flex flex-col justify-center items-start w-[470px] gap-5">
+          <div className="flex flex-col justify-center items-start  md:w-[470px] gap-3 md:gap-5">
             <h3 className="text-sm text-left">Remote teams</h3>
-            <h1 className="font-bold text-[rgba(29,33,48,1)] text-[35px] leading-8 text-left w-[395px]">
+            <h1 className="font-bold text-[rgba(29,33,48,1)] text-[25px] md:text-[35px] leading-8 text-left w-[395px]">
               Real-time collaboration
             </h1>
-            <p className="font-bold text-[rgba(29,33,48,1)] text-xs leading-4 text-left w-[435px]">
+            <p className="font-bold text-[rgba(29,33,48,1)] text-xs leading-4 text-left w-[380px] md:w-[435px]">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua. At vero eos et accusam et justo duo
@@ -278,12 +278,12 @@ function Product() {
         </div>
         <div className="flex flex-col justify-center items-center gap-2">
           <div className="flex justify-center items-center">
-            <h1 className="font-bold text-[rgba(29,33,48,1)] mb-2 text-[40px] text-center">
+            <h1 className="font-bold text-[rgba(29,33,48,1)] mb-2 text-[25px] md:text-[40px] text-center">
               Features
             </h1>
           </div>
-          <div className="flex flex-row justify-center items-center bg-[rgba(215,152,225,0.15)] p-10 rounded-xl">
-            <div className="flex flex-col gap-3">
+          <div className="flex flex-col md:flex-row justify-center items-center bg-[rgba(215,152,225,0.15)] md:p-10 rounded-xl p-3">
+            <div className="flex flex-col gap-3 ml-12">
               <img className="w-8" src={feat1} alt="feature logo" />
 
               <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[310px]">
@@ -294,7 +294,11 @@ function Product() {
                 diam nonumy eirmod tempor.
               </p>
             </div>
-            <img className="pr-6 h-36" src={divider} alt="Divider logo" />
+            <img
+              className="pr-6 h-36 hidden md:block"
+              src={divider}
+              alt="Divider logo"
+            />
             <div className="flex flex-col gap-3">
               <img className="w-8" src={feat2} alt="feature logo" />
               <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[255px]">
@@ -305,7 +309,11 @@ function Product() {
                 diam nonumy eirmod tempor.
               </p>
             </div>
-            <img className="pr-6 h-36" src={divider} alt="Divider logo" />
+            <img
+              className="pr-6 h-36 hidden md:block"
+              src={divider}
+              alt="Divider logo"
+            />
             <div className="flex flex-col gap-3">
               <img className="w-8" src={feat3} alt="feature logo" />
               <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[270px]">
@@ -318,8 +326,8 @@ function Product() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center gap-5 w-screen pt-10 pb-14 bg-gradient-to-t from-cyan-50 to-yellow-50">
-          <h1 className="font-bold text-[rgba(29,33,48,1)] text-[40px] text-center leading-10 w-[630px]">
+        <div className="flex flex-col justify-center items-center gap-5 w-screen pt-10 pb-14 bg-gradient-to-t from-cyan-50 to-yellow-50 p-3 ">
+          <h1 className="font-bold text-[rgba(29,33,48,1)] text-[25px] md:text-[40px] text-center leading-10 w-[380px] md:w-[630px]">
             Are you ready to grow your business with us?
           </h1>
           <p className="font-normal text-[rgba(29,33,48,1)] text-xs text-center">
