@@ -16,7 +16,7 @@ const PostBlog = () => {
             Luke Matthews l November 8, 2021
           </p>
           <img
-            className="md:w-[1200px] h-[275px] w-[360px]h-[510px] rounded-2xl rounded-t-2xl mt-5"
+            className="md:w-[1200px] h-[275px] w-[360px] md:h-[510px] rounded-2xl rounded-t-2xl mt-5"
             src={bg}
             alt="six girls discuss on payment process"
           />
