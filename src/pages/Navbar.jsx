@@ -1,5 +1,6 @@
 import { Outlet, NavLink } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
+import Nav from "../../componets/Nav";
 
 import profile from "/images/BJD-favicon.png";
 
@@ -10,10 +11,6 @@ function Navbar() {
     }
   };
 
-  const styling = ({ isActive }) =>
-    isActive
-      ? "bg-indigo-700 text-white hidden md:block hover:bg-pink-600 underline hover:text-white text-lg rounded-md px-3 py-2"
-      : "text-white hover:bg-pink-600 hidden md:block hover:text-white hover:underline text-lg rounded-md px-3 py-2";
   const styling2 = ({ isActive }) =>
     isActive
       ? "bg-indigo-700 text-white  hover:bg-pink-600 underline hover:text-white text-lg rounded-md px-3 py-2"
@@ -29,35 +26,7 @@ function Navbar() {
                 Company logo
               </span>
             </NavLink>
-            <div className="md:ml-auto" ref={navRef}>
-              <div className="flex space-x-2 flex-col md:flex-row h-80 md:h-10 justify-center items-center">
-                <NavLink to="/" className={styling}>
-                  Home
-                </NavLink>
-                <NavLink to="/about" className={styling}>
-                  About
-                </NavLink>
-
-                <NavLink to="/product" className={styling}>
-                  Product
-                </NavLink>
-                <NavLink to="/price" className={styling}>
-                  Pricing
-                </NavLink>
-                <NavLink to="/blog" className={styling}>
-                  Blog
-                </NavLink>
-                <NavLink to="/contact" className={styling}>
-                  Contact
-                </NavLink>
-                <NavLink to="/post" className={styling}>
-                  PostBlog
-                </NavLink>
-              </div>
-              <button className="hidden cursor-pointer" onClick={showNavbar}>
-                <FaTimes />
-              </button>
-            </div>
+            <Nav />
             <button
               className="block md:hidden cursor-pointer"
               onClick={showNavbar}
