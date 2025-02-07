@@ -2,11 +2,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 
-function Nav() {
+function Nav2() {
   const styling = ({ isActive }) =>
     isActive
-      ? "bg-indigo-700 text-white hidden md:block hover:bg-pink-600 underline hover:text-white text-lg rounded-md px-3 py-2"
-      : "text-white hover:bg-pink-600 hidden md:block hover:text-white hover:underline text-lg rounded-md px-3 py-2";
+      ? "bg-indigo-700 text-white hover:bg-pink-600 underline hover:text-white text-lg rounded-md px-3 py-2"
+      : "text-white hover:bg-pink-600 hover:text-white hover:underline text-lg rounded-md px-3 py-2";
   return (
     <div className="md:ml-auto">
       <div className="flex space-x-2 flex-col md:flex-row h-80 md:h-10 justify-center items-center">
@@ -40,4 +40,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default Nav2;

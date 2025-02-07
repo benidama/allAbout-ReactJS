@@ -1,16 +1,10 @@
 import { Outlet, NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import Nav from "../../componets/Nav";
-
 import profile from "/images/BJD-favicon.png";
 
 function Navbar() {
-  const showNavbar = () => {
-    {
-      styling2;
-    }
-  };
-
+  // const [open, setOpen] = React.useState(false)
   const styling2 = ({ isActive }) =>
     isActive
       ? "bg-indigo-700 text-white  hover:bg-pink-600 underline hover:text-white text-lg rounded-md px-3 py-2"
@@ -27,12 +21,9 @@ function Navbar() {
               </span>
             </NavLink>
             <Nav />
-            <button
-              className="block md:hidden cursor-pointer"
-              onClick={showNavbar}
-            >
+            <NavLink className="block md:hidden cursor-pointer" to="/blog">
               <FaBars />
-            </button>
+            </NavLink>
           </div>
         </div>
       </div>
