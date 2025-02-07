@@ -1,11 +1,21 @@
 import { Outlet, NavLink } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
-import Nav from "../../componets/Nav";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { useState } from "react";
+
 import profile from "/images/BJD-favicon.png";
 
 function Navbar() {
-  // const [open, setOpen] = React.useState(false)
-  const styling2 = ({ isActive }) =>
+  const [open, setOpen] = useState(false);
+  const [close, setClose] = useState(true);
+  const toggleMenu = () => {
+    setOpen(!open); //!false = true
+  };
+  const closeMenu = () => {
+    setOpen(null);
+  };
+  console.log(open);
+  console.log(close);
+  const styling = ({ isActive }) =>
     isActive
       ? "bg-indigo-700 text-white  hover:bg-pink-600 underline hover:text-white text-lg rounded-md px-3 py-2"
       : "text-white hover:bg-pink-600  hover:text-white hover:underline text-lg rounded-md px-3 py-2";
@@ -20,13 +30,108 @@ function Navbar() {
                 Company logo
               </span>
             </NavLink>
-            <Nav />
-            <NavLink className="block md:hidden cursor-pointer" to="/blog">
+            <div className="md:ml-auto hidden md:block ">
+              <div className="flex space-x-2 flex-col md:flex-row h-80 md:h-10 justify-center items-center">
+                <NavLink to="/" className={styling}>
+                  Home
+                </NavLink>
+                <NavLink to="/about" className={styling}>
+                  About
+                </NavLink>
+
+                <NavLink to="/product" className={styling}>
+                  Product
+                </NavLink>
+                <NavLink to="/price" className={styling}>
+                  Pricing
+                </NavLink>
+                <NavLink to="/blog" className={styling}>
+                  Blog
+                </NavLink>
+                <NavLink to="/contact" className={styling}>
+                  Contact
+                </NavLink>
+                <NavLink to="/post" className={styling}>
+                  PostBlog
+                </NavLink>
+              </div>
+            </div>
+            <NavLink
+              className="block md:hidden cursor-pointer"
+              onClick={toggleMenu}
+            >
               <FaBars />
             </NavLink>
           </div>
         </div>
       </div>
+      {open ? (
+        <div className="md:ml-auto md:hidden block bg-indigo-700 ">
+          <div>
+            <button className="md:hidden cursor-pointer" onClick={closeMenu}>
+              <FaTimes />
+            </button>
+          </div>
+          <div className="flex space-x-2 flex-col md:flex-row h-80 md:h-10 justify-center items-center">
+            <NavLink to="/" className={styling}>
+              Home
+            </NavLink>
+            <NavLink to="/about" className={styling}>
+              About
+            </NavLink>
+
+            <NavLink to="/product" className={styling}>
+              Product
+            </NavLink>
+            <NavLink to="/price" className={styling}>
+              Pricing
+            </NavLink>
+            <NavLink to="/blog" className={styling}>
+              Blog
+            </NavLink>
+            <NavLink to="/contact" className={styling}>
+              Contact
+            </NavLink>
+            <NavLink to="/post" className={styling}>
+              PostBlog
+            </NavLink>
+          </div>
+        </div>
+      ) : null}
+
+      {/* {close ? null : (
+        <div className="md:ml-auto md:hidden block bg-indigo-700 ">
+          <div>
+            <button className="md:hidden cursor-pointer" onClick={closeMenu}>
+              <FaTimes />
+            </button>
+          </div>
+          <div className="flex space-x-2 flex-col md:flex-row h-80 md:h-10 justify-center items-center">
+            <NavLink to="/" className={styling}>
+              Home
+            </NavLink>
+            <NavLink to="/about" className={styling}>
+              About
+            </NavLink>
+
+            <NavLink to="/product" className={styling}>
+              Product
+            </NavLink>
+            <NavLink to="/price" className={styling}>
+              Pricing
+            </NavLink>
+            <NavLink to="/blog" className={styling}>
+              Blog
+            </NavLink>
+            <NavLink to="/contact" className={styling}>
+              Contact
+            </NavLink>
+            <NavLink to="/post" className={styling}>
+              PostBlog
+            </NavLink>
+          </div>
+        </div>
+      )} */}
       <Outlet />
     </nav>
   );

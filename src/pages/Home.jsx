@@ -88,7 +88,7 @@ function Home() {
         </div>
         <div className="flex justify-center items-center mt-7">
           <img
-            className="md:w-[890px] w-[380px] h-[646px] border-[rgba(224,228,252,1)] border-[2px] rounded-2xl"
+            className="md:w-[890px] w-[380px] h-[450px] md:h-[646px] border-[rgba(224,228,252,1)] border-[2px] rounded-2xl"
             src={bg}
             alt="dashboard overview"
           />
