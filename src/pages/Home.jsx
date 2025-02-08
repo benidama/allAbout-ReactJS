@@ -153,10 +153,10 @@ function Home() {
             <h3 className="text-left text-[16px] text-blue-950">
               Why should you work with us?
             </h3>
-            <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left md:w-[310px]">
+            <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[280px] md:w-[310px]">
               To upscale your business to the next level
             </h1>
-            <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-4 text-left md:w-[415px]">
+            <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-4 text-left w-[280px] md:w-[415px]">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua invidunt ut labore.
@@ -167,7 +167,7 @@ function Home() {
               <div className="w-6 bg-[rgba(255,172,172,1)] rounded-full justify-center flex items-center h-6">
                 <img className="w-6 h-6" src={arrow} alt="Arrow logo" />
               </div>
-              <p className="font-medium text-[rgba(29,33,48,1)] text-[14px] leading-5 text-left md:w-[415px]">
+              <p className="font-medium text-[rgba(29,33,48,1)] text-[14px] leading-5 text-left w-[280px] md:w-[415px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod.
               </p>
@@ -177,7 +177,7 @@ function Home() {
               <div className="w-6 bg-[rgba(255,172,172,1)] rounded-full justify-center flex items-center h-6">
                 <img className="w-6 h-6" src={arrow} alt="Arrow logo" />
               </div>
-              <p className="font-medium text-[rgba(29,33,48,1)] text-[14px] leading-5 text-left md:w-[415px]">
+              <p className="font-medium text-[rgba(29,33,48,1)] text-[14px] leading-5 text-left w-[280px] md:w-[415px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod.
               </p>
@@ -187,7 +187,7 @@ function Home() {
               <div className="w-6 bg-[rgba(255,172,172,1)] rounded-full justify-center flex items-center h-6">
                 <img className="w-6 h-6" src={arrow} alt="Arrow logo" />
               </div>
-              <p className="font-medium text-[rgba(29,33,48,1)] text-[14px] leading-5 text-left md:w-[415px]">
+              <p className="font-medium text-[rgba(29,33,48,1)] text-[14px] leading-5 text-left w-[280px] md:w-[415px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod.
               </p>
@@ -196,21 +196,21 @@ function Home() {
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center pt-7 pb-7 bg-gradient-to-r from-blue-400 to-blue-200 gap-10">
           <div className="flex flex-col justify-center items-start gap-5">
-            <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left md:w-[310px]">
+            <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[280px] md:w-[310px]">
               More impressions, more conversions
             </h1>
-            <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-5 text-left md:w-[415px]">
+            <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-5 text-left w-[280px] md:w-[415px]">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua invidunt ut labore.
             </p>
-            <button className="bg-[rgba(29,33,48,1)] w-28 h-8 rounded-md text-center text-[rgba(255,255,255,1)]">
+            <button className="bg-[rgba(29,33,48,1)] w-28 h-8 rounded-md ml-2 text-center text-[rgba(255,255,255,1)]">
               Get Free trial
             </button>
           </div>
           <div>
             <img
-              className="md:w-[545px] h-[300px] w-[380px]"
+              className="md:w-[545px] h-[300px] w-[370px]"
               src={bg}
               alt="It shows why our company is the best"
             />
