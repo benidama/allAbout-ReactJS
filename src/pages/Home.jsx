@@ -25,10 +25,10 @@ function Home() {
     <div>
       <header className="flex flex-col justify-center items-center p-10">
         <div className="flex flex-col justify-center items-center gap-5 bg-gradient-to-b from-white via-teal-100 border-teal-100">
-          <h1 className="font-bold text-[rgba(29,33,48,1)] md:text-[40px] text-[25px] leading-10 text-center md:w-[530px]  sm:w[370px]">
+          <h1 className="font-bold text-[rgba(29,33,48,1)] md:text-[40px] text-[25px] leading-10 text-center md:w-[530px]  sm:w[385px]">
             The Best Software to Grow your Sales and Services
           </h1>
-          <p className="text-sm pr-10 md:pl-48 text-center pl-10">
+          <p className="text-sm md:pr-10 pr-5 md:pl-40 text-start md:text-center pl-5">
             Welcome to Quintus, we are ready to give you high-quality fashion,
             eco-friendly home goods, innovative tech gadgets, etc. At Quintus,
             we are passionate about providing our customers with exceptional
@@ -42,32 +42,43 @@ function Home() {
           <h1 className="font-bold text-[rgba(29,33,48,1)] pl-10 text-[25px] leading-10 text-center ">
             Our mission
           </h1>
-          <p className="text-sm pr-10 md:pl-48 pl-10 text-center">
+          <p className="text-sm pr-10 md:pl-48 pl-10 text-start md:text-center">
             Our mission is to make premium products accessible to everyone,
             empower sustainable living, or revolutionize the way people shop
             online. We believe in core values, e.g., quality, customer
             satisfaction, innovation, or community and strive to reflect these
             values in everything we do.
           </p>
-          <div className="text-sm pr-10 md:pl-48 pl-10 flex flex-col justify-center items-start">
+          <div className="text-sm pr-5 md:pr-10 md:pl-48 pl-5 flex flex-col justify-center items-start">
             <h1 className="font-bold p-10 text-[rgba(29,33,48,1)] text-[25px] md:pl-60 leading-10 text-center ">
               Why Choose Us?
             </h1>
-            <p className="text-sm pr-10 md:pl-48 pl-5 text-center">
-              Quality Assurance: Every product is carefully selected and tested
-              to ensure it meets our standards.
+            <p className="text-sm pr-5 md:pr-10 md:pl-48 pl-5 text-start md:text-center">
+              <span className="text-xl font-bold text-[rgba(29,33,48,1)]">
+                Quality Assurance:
+              </span>
+              Every product is carefully selected and tested to ensure it meets
+              our standards.
             </p>
-            <p className="text-sm pr-10 md:pl-48 pl-5 text-center">
-              Affordable Prices: We believe that great products shouldn’t come
-              with a hefty price tag.
+            <p className="text-sm pr-5 md:pl-48 pl-5 text-start md:text-center">
+              <span className="text-xl font-bold text-[rgba(29,33,48,1)]">
+                Affordable Prices:
+              </span>
+              We believe that great products shouldn’t come with a hefty price
+              tag.
             </p>
-            <p className="text-sm pr-10 md:pl-48 pl-5 text-center">
-              Sustainability: eco-friendly materials, carbon-neutral shipping,
-              etc.
+            <p className="text-sm pr-5 md:pl-48 pl-5 text-start md:text-center">
+              <span className="text-xl font-bold text-[rgba(29,33,48,1)]">
+                Sustainability:
+              </span>
+              eco-friendly materials, carbon-neutral shipping, etc.
             </p>
-            <p className="text-sm pr-10 md:pl-48 pl-5 text-center">
-              Exceptional Customer Service: Our team is always ready to assist
-              you with any questions or concerns.
+            <p className="text-sm pr-5 md:pl-48 pl-5 text-start md:text-center">
+              <span className="text-xl font-bold text-[rgba(29,33,48,1)]">
+                Exceptional Customer Service:
+              </span>
+              Our team is always ready to assist you with any questions or
+              concerns.
             </p>
           </div>
 
