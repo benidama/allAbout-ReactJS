@@ -28,7 +28,7 @@ function Home() {
           <h1 className="font-bold text-[rgba(29,33,48,1)] md:text-[40px] text-[25px] leading-10 text-center md:w-[530px]  sm:w[385px]">
             The Best Software to Grow your Sales and Services
           </h1>
-          <p className="text-sm md:pr-10 pr-5 md:pl-40 text-start md:text-center pl-5">
+          <p className="text-sm pr-10  md:pl-40 text-start md:text-center pl-5">
             Welcome to Quintus, we are ready to give you high-quality fashion,
             eco-friendly home goods, innovative tech gadgets, etc. At Quintus,
             we are passionate about providing our customers with exceptional
@@ -160,7 +160,7 @@ function Home() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-14 mb-14">
-          <div className="flex flex-col justify-center items-start gap-3 w-[380px] md:w-[500px]">
+          <div className="flex flex-col justify-center pr-10 md:pr-1 items-start gap-3 w-[380px] md:w-[500px]">
             <h3 className="text-left text-[16px] text-blue-950">
               Why should you work with us?
             </h3>
@@ -227,7 +227,7 @@ function Home() {
             />
           </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-between items-center pt-8 pb-8 md:ml-40 md:mr-20">
+        <div className="flex flex-col md:flex-row justify-between gap-5 md:gap-1 items-center pt-8 pb-8 ml-10 md:ml-40 md:mr-20">
           <img
             className="w-28 h-8"
             src={logo1}
@@ -256,7 +256,7 @@ function Home() {
         </div>
 
         <div className="flex flex-col md:flex-row justify-center items-center mt-14 mb-14">
-          <div className="flex flex-col justify-center items-start gap-3 md:w-[500px]">
+          <div className="flex flex-col justify-center items-start gap-3 pl-10 md:pl-1 w-[280px] md:w-[500px]">
             <h3 className="text-left text-[16px] text-blue-950">
               Discover More
             </h3>
@@ -329,7 +329,7 @@ function Home() {
             </h1>
           </div>
           <div className="flex flex-col md:flex-row justify-center items-center bg-[rgba(215,152,225,0.15)] p-10 rounded-xl">
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 pl-12 md:pl-1">
               <img className="w-8" src={feat1} alt="feature logo" />
 
               <h1 className="font-medium text-[rgba(29,33,48,1)] text-[25px] leading-7 text-left w-[310px]">
