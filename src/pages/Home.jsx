@@ -87,7 +87,7 @@ function Home() {
             className="bg-[rgba(255,255,255,1)] flex justify-between items-center flex-row h-12 w-[390px] pl-3 pr-1 rounded-lg mb-7"
           >
             <input
-              className="text-[rgba(29,33,48,1)] text-[11px]"
+              className="text-[rgba(29,33,48,1)] text-sm w-[265px] h-8 pl-2"
               type="text"
               id="inptForm"
               placeholder="Enter your Email"
