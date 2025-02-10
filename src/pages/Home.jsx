@@ -160,7 +160,7 @@ function Home() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-14 mb-14">
-          <div className="flex flex-col justify-center pr-10 md:pr-1 items-start gap-3 w-[380px] md:w-[500px]">
+          <div className="flex flex-col justify-center pl-10 md:pl-1 items-start gap-3 w-[380px] md:w-[500px]">
             <h3 className="text-left text-[16px] text-blue-950">
               Why should you work with us?
             </h3>
@@ -256,7 +256,7 @@ function Home() {
         </div>
 
         <div className="flex flex-col md:flex-row justify-center items-center mt-14 mb-14">
-          <div className="flex flex-col justify-center items-start gap-3 pl-10 md:pl-1 w-[280px] md:w-[500px]">
+          <div className="flex flex-col justify-center items-start gap-3 pl-5 md:pl-1 w-[380px] md:w-[500px]">
             <h3 className="text-left text-[16px] text-blue-950">
               Discover More
             </h3>
