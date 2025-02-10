@@ -24,14 +24,14 @@ function Product() {
       <header className="flex flex-col justify-center items-center pt-6 md:pt-11 gap-7 md:gap-11 bg-gradient-to-r from-yellow-50 to-cyan-100">
         <div className="flex flex-col md:flex-row justify-center items-center gap-3">
           <div className="flex flex-col justify-center items-start gap-5 sm:w-[396px] md:w-[480px] text-left">
-            <h1 className="font-bold text-[rgba(29,33,48,1)] text-[35px] leading-10 text-left w-[395px]">
+            <h1 className="font-bold text-[rgba(29,33,48,1)] text-[25px] pl-5 md:pl-1 md:text-[35px] leading-10 text-left w-[395px]">
               Grow your Sales and Services
             </h1>
-            <p className="font-normal text-xs leading-4 w-[390px] p-2">
+            <p className="font-normal text-xs leading-4 pl-5 md:pl-1 w-[390px] p-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <div className="flex flex-row justify-center items-center gap-4">
+            <div className="flex flex-row justify-center items-center pl-10 md:pl-1 gap-4">
               <button className="bg-[rgba(29,33,48,1)] text-center w-28 h-8 rounded-md text-xs text-[rgba(255,255,255,1)]">
                 Get Started
               </button>
@@ -190,7 +190,7 @@ function Product() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-16 pt-10 mb-10 mt-gradient-to-r from-cyan-50 to-slate-50 p-2">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-16 pt-10 mb-10 mt-gradient-to-r from-cyan-50 to-slate-50 pl-5 md:pl-1 p-2">
           <div className="flex flex-col justify-center items-start pl-3 md:w-[470px] gap-3 md:gap-5">
             <h3 className="text-sm text-left">Marketing insights</h3>
             <h1 className="font-bold text-[rgba(29,33,48,1)] text-[25px] md:text-[35px] leading-8 text-left w-[395px]">
