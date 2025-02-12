@@ -99,39 +99,7 @@ function Navbar() {
         </div>
       ) : null}
 
-      {/* {close ? null : (
-        <div className="md:ml-auto md:hidden block bg-indigo-700 ">
-          <div>
-            <button className="md:hidden cursor-pointer" onClick={closeMenu}>
-              <FaTimes />
-            </button>
-          </div>
-          <div className="flex space-x-2 flex-col md:flex-row h-80 md:h-10 justify-center items-center">
-            <NavLink to="/" className={styling}>
-              Home
-            </NavLink>
-            <NavLink to="/about" className={styling}>
-              About
-            </NavLink>
-
-            <NavLink to="/product" className={styling}>
-              Product
-            </NavLink>
-            <NavLink to="/price" className={styling}>
-              Pricing
-            </NavLink>
-            <NavLink to="/blog" className={styling}>
-              Blog
-            </NavLink>
-            <NavLink to="/contact" className={styling}>
-              Contact
-            </NavLink>
-            <NavLink to="/post" className={styling}>
-              PostBlog
-            </NavLink>
-          </div>
-        </div>
-      )} */}
+      
       <Outlet />
     </nav>
   );

@@ -53,14 +53,14 @@ function Product() {
           <h1 className="font-bold text-[rgba(29,33,48,1)] text-[25px] md:text-[35px] leading-10 text-center">
             We’re a team of data analysts
           </h1>
-          <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 text-center md:w-[510px]">
+          <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 text-center w-[380px] pl-5 md:pl-1 md:w-[510px]">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
             et ea rebum.
           </p>
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center gap-9 pb-10 pt-12 pl-2 bg-[rgba(240,242,254,1)]">
+        <div className="flex flex-col md:flex-row justify-center items-center pl-5  gap-9 pb-10 pt-12 md:pl-1 w-[390px] bg-[rgba(240,242,254,1)]">
           <div className="flex flex-col justify-center items-start  gap-3">
             <h3 className="text-sm text-blue-200">Our Goals</h3>
             <h1 className="font-bold text-[rgba(29,33,48,1)] text-[25px] md:text-[35px] leading-8 md:w-[430px] text-left">
