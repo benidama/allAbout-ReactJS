@@ -26,7 +26,7 @@ function Product() {
           <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 text-center md:w-[490px] p-2">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua.
+            erat, sed diam voluptua to go ahead in all sides.
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-5">
