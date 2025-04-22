@@ -1,4 +1,3 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 import fb from "/images/Facebook.png";
 import ig from "/images/Instagram.png";

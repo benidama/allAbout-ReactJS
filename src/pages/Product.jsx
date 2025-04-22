@@ -1,4 +1,3 @@
-import React from "react";
 import divider from "/images/homepage/Divider.png";
 import bg1 from "/images/product/75c046f145a6be2885be65e4235d2723.png";
 import logo1 from "/images/homepage/Logo 1.jpg";
@@ -78,23 +77,14 @@ function Product() {
         </div>
       </header>
       <main className="flex flex-col justify-center items-center gap-2">
-        <div
-          div
-          className="flex flex-col justify-center items-center bg-gradient-to-r from-cyan-50 to-slate-200 w-[397px] md:w-screen"
-        >
+        <div className="flex flex-col justify-center items-center bg-gradient-to-r from-cyan-50 to-slate-200 w-[397px] md:w-screen">
           <div>
             <h1 className="font-bold text-[rgba(29,33,48,1)] text-[25px] md:text-[40px] mt-11 md:mt-28 mb-11 leading-10 text-center w-[380px] md:w-[670px]">
               Get the best out of your company with our service
             </h1>
           </div>
-          <div
-            div
-            className="flex flex-col justify-center items-center w-[390px] md:w-screen md:mr-[93px] gap-5 md:gap-11 pt-14 pb-12 bg-[rgba(255,255,255,0.69)] md:rounded-tr-3xl"
-          >
-            <div
-              div
-              className="flex flex-col md:flex-row justify-center items-center gap-2"
-            >
+          <div className="flex flex-col justify-center items-center w-[390px] md:w-screen md:mr-[93px] gap-5 md:gap-11 pt-14 pb-12 bg-[rgba(255,255,255,0.69)] md:rounded-tr-3xl">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-2">
               <div className="flex flex-col gap-3">
                 <img
                   className="w-10"

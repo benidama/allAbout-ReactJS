@@ -1,4 +1,3 @@
-import React from "react";
 import team1 from "/images/about/1.jpg";
 import team2 from "/images/about/2.png";
 import team3 from "/images/about/3.png";
@@ -87,7 +86,7 @@ function Product() {
           </div>
         </div>
 
-        <div div className="flex flex-col justify-center items-center w-screen">
+        <div className="flex flex-col justify-center items-center w-screen">
           <div>
             <h1 className="font-bold text-[rgba(29,33,48,1)] text-[40px] mt-8 text-center">
               Our corporate values
@@ -98,10 +97,7 @@ function Product() {
             </p>
           </div>
           <div className="flex flex-col justify-center items-center w-screen gap-11 pt-14 pb-12 bg-[rgba(249,240,251,1)]">
-            <div
-              div
-              className="flex flex-col md:flex-row justify-center items-center gap-2"
-            >
+            <div className="flex flex-col md:flex-row justify-center items-center gap-2">
               <div className="flex flex-col gap-3">
                 <img
                   className="w-10"

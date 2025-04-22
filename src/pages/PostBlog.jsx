@@ -1,4 +1,3 @@
-import React from "react";
 import bg from "/images/bg-7.png";
 import post1 from "/images/post7/1.png";
 import post2 from "/images/post7/2.png";

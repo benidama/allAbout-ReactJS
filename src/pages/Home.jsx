@@ -1,4 +1,3 @@
-import React from "react";
 import bg from "/images/homepage/image-2.png";
 import arrow from "/images/homepage/Arrow.jpg";
 import divider from "/images/homepage/Divider.png";

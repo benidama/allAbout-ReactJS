@@ -1,4 +1,3 @@
-import React from "react";
 import contact1 from "/images/contact/Icon10.png";
 import contact2 from "/images/contact/Icon11.png";
 import contact3 from "/images/contact/Icon12.png";

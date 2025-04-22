@@ -1,4 +1,3 @@
-import React from "react";
 import overview from "/images/blog/1.png";
 import post1 from "/images/blog/1.png";
 import post2 from "/images/blog/2.png";

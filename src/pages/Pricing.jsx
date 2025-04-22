@@ -1,4 +1,3 @@
-import React from "react";
 import divider from "/images/price/Divider.jpg";
 import reg6 from "/images/price/Icon6.png";
 import reg8 from "/images/price/Icon8.png";
