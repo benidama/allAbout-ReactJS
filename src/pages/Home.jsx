@@ -1,23 +1,23 @@
-// import bg from "/images/homepage/image-2.png";
-// import arrow from "/images/homepage/Arrow.jpg";
+import bg from "/images/homepage/image-2.png";
+import arrow from "/images/homepage/Arrow.jpg";
 // import divider from "/images/homepage/Divider.png";
-// import solution1 from "/images/homepage/Icon 1.png";
-// import solution2 from "/images/homepage/Icon 2.png";
-// import solution3 from "/images/homepage/Icon 3.png";
-// import logo1 from "/images/homepage/Logo 1.jpg";
-// import logo2 from "/images/homepage/Logo 2.jpg";
-// import logo3 from "/images/homepage/Logo 3.jpg";
-// import logo4 from "/images/homepage/Logo 4.jpg";
-// import logo5 from "/images/homepage/Logo 5.jpg";
-// import more1 from "/images/homepage/More1.jpg";
-// import more2 from "/images/homepage/More2.jpg";
-// import more3 from "/images/homepage/More3.jpg";
-// import feat1 from "/images/homepage/feat1.jpg";
-// import feat2 from "/images/homepage/feat2.jpg";
-// import feat3 from "/images/homepage/feat3.jpg";
-// import leader1 from "/images/homepage/exper1.png";
-// import leader2 from "/images/homepage/exp2.png";
-// import leader3 from "/images/homepage/epx3.png";
+import solution1 from "/images/homepage/Icon 1.png";
+import solution2 from "/images/homepage/Icon 2.png";
+import solution3 from "/images/homepage/Icon 3.png";
+import logo1 from "/images/homepage/Logo 1.jpg";
+import logo2 from "/images/homepage/Logo 2.jpg";
+import logo3 from "/images/homepage/Logo 3.jpg";
+import logo4 from "/images/homepage/Logo 4.jpg";
+import logo5 from "/images/homepage/Logo 5.jpg";
+import more1 from "/images/homepage/More1.jpg";
+import more2 from "/images/homepage/More2.jpg";
+import more3 from "/images/homepage/More3.jpg";
+import feat1 from "/images/homepage/feat1.jpg";
+import feat2 from "/images/homepage/feat2.jpg";
+import feat3 from "/images/homepage/feat3.jpg";
+import leader1 from "/images/homepage/exper1.png";
+import leader2 from "/images/homepage/exp2.png";
+import leader3 from "/images/homepage/epx3.png";
 
 function Home() {
   return (
@@ -44,7 +44,6 @@ function Home() {
             satisfaction, innovation, or community and strive to reflect these
             values in everything we do.
           </p>
-
           <div className="w-full">
             <h2 className="font-bold text-[rgba(29,33,48,1)] text-xl md:text-2xl text-center my-6">
               Why Choose Us?
@@ -79,7 +78,6 @@ function Home() {
               </p>
             </div>
           </div>
-
           <form className="bg-white flex justify-between items-center w-full max-w-sm h-12 pl-3 pr-1 rounded-lg my-6 shadow-sm">
             <input
               className="text-[rgba(29,33,48,1 text-sm flex-1 h-8 pl-2 outline-none"
@@ -92,18 +90,16 @@ function Home() {
             </button>
           </form>
         </div>
-
         <div className="flex justify-center items-center mt-7 w-full">
           <img
             className="w-full max-w-sm md:max-w-4xl h-auto border-2 border-[rgba(224,228,252,1)] rounded-2xl"
-            src="/images/homepage/image-2.png"
+            src={bg}
             alt="dashboard overview"
           />
         </div>
       </header>
 
       <main>
-        {/* Solutions Section */}
         <div className="flex flex-col justify-center items-center gap-2 px-4 md:px-8 my-12">
           <div className="flex flex-col justify-center items-center gap-3 mb-6">
             <h3 className="text-gradient-[from-#373FFF-to-#3ACAF8] text-blue-600">
@@ -113,12 +109,11 @@ function Home() {
               We have the Best Solution for your Business
             </h2>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 bg-[rgba(224,228,252,1)] p-6 md:p-10 rounded-xl w-full max-w-6xl">
             <div className="flex flex-col gap-3">
               <img
                 className="w-10"
-                src="/images/homepage/Icon 1.png"
+                src={solution1}
                 alt="User first confirmation"
               />
               <h3 className="font-medium text-[rgba(29,33,48,1)] text-xl md:text-2xl leading-tight">
@@ -129,11 +124,10 @@ function Home() {
                 diam nonumy.
               </p>
             </div>
-
             <div className="flex flex-col gap-3">
               <img
                 className="w-10"
-                src="/images/homepage/Icon 2.png"
+                src={solution2}
                 alt="Icon of user confirmation"
               />
               <h3 className="font-medium text-[rgba(29,33,48,1)] text-xl md:text-2xl leading-tight">
@@ -144,13 +138,8 @@ function Home() {
                 diam nonumy.
               </p>
             </div>
-
             <div className="flex flex-col gap-3">
-              <img
-                className="w-10"
-                src="/images/homepage/Icon 3.png"
-                alt="Icon of air phone"
-              />
+              <img className="w-10" src={solution3} alt="Icon of air phone" />
               <h3 className="font-medium text-[rgba(29,33,48,1)] text-xl md:text-2xl leading-tight">
                 Full time customer support - 24/7
               </h3>
@@ -161,8 +150,6 @@ function Home() {
             </div>
           </div>
         </div>
-
-        {/* Why Work With Us Section */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 px-4 md:px-16 my-16">
           <div className="flex flex-col justify-center items-start gap-3 w-full max-w-md">
             <h3 className="text-left text-base text-blue-950">
@@ -177,43 +164,28 @@ function Home() {
               erat, sed diam voluptua invidunt ut labore.
             </p>
           </div>
-
           <div className="flex flex-col justify-center items-start gap-4 w-full max-w-lg">
             <div className="flex items-center gap-3">
               <div className="w-6 h-6 bg-[rgba(255,172,172,1)] rounded-full flex justify-center items-center">
-                <img
-                  className="w-4 h-4"
-                  src="/images/homepage/Arrow.jpg"
-                  alt="Arrow logo"
-                />
+                <img className="w-4 h-4" src={arrow} alt="Arrow logo" />
               </div>
               <p className="text-sm md:text-base text-[rgba(29,33,48,1)]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod.
               </p>
             </div>
-
             <div className="flex items-center gap-3">
               <div className="w-6 h-6 bg-[rgba(255,172,172,1)] rounded-full flex justify-center items-center">
-                <img
-                  className="w-4 h-4"
-                  src="/images/homepage/Arrow.jpg"
-                  alt="Arrow logo"
-                />
+                <img className="w-4 h-4" src={arrow} alt="Arrow logo" />
               </div>
               <p className="text-sm md:text-base text-[rgba(29,33,48,1)]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod.
               </p>
             </div>
-
             <div className="flex items-center gap-3">
               <div className="w-6 h-6 bg-[rgba(255,172,172,1)] rounded-full flex justify-center items-center">
-                <img
-                  className="w-4 h-4"
-                  src="/images/homepage/Arrow.jpg"
-                  alt="Arrow logo"
-                />
+                <img className="w-4 h-4" src={arrow} alt="Arrow logo" />
               </div>
               <p className="text-sm md:text-base text-[rgba(29,33,48,1)]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -222,8 +194,6 @@ function Home() {
             </div>
           </div>
         </div>
-
-        {/* Impressions Section */}
         <div className="flex flex-col md:flex-row justify-between items-center py-12 bg-gradient-to-r from-blue-400 to-blue-200 px-4 md:px-16 gap-8">
           <div className="flex flex-col justify-center items-start gap-5 w-full max-w-md">
             <h2 className="font-medium text-[rgba(29,33,48,1)] text-2xl leading-tight">
@@ -242,42 +212,18 @@ function Home() {
           <div className="w-full max-w-lg">
             <img
               className="w-full h-auto rounded-lg shadow-md"
-              src="/images/homepage/image-2.png"
+              src={bg}
               alt="Dashboard demonstration"
             />
           </div>
         </div>
-
-        {/* Logos Section */}
         <div className="flex flex-wrap justify-center gap-8 md:gap-12 items-center py-12 px-4 md:px-16">
-          <img
-            className="h-8 w-auto"
-            src="/images/homepage/Logo 1.jpg"
-            alt="Partner logo"
-          />
-          <img
-            className="h-8 w-auto"
-            src="/images/homepage/Logo 2.jpg"
-            alt="Partner logo"
-          />
-          <img
-            className="h-8 w-auto"
-            src="/images/homepage/Logo 3.jpg"
-            alt="Partner logo"
-          />
-          <img
-            className="h-8 w-auto"
-            src="/images/homepage/Logo 4.jpg"
-            alt="Partner logo"
-          />
-          <img
-            className="h-8 w-auto"
-            src="/images/homepage/Logo 5.jpg"
-            alt="Partner logo"
-          />
+          <img className="h-8 w-auto" src={logo1} alt="Partner logo" />
+          <img className="h-8 w-auto" src={logo2} alt="Partner logo" />
+          <img className="h-8 w-auto" src={logo3} alt="Partner logo" />
+          <img className="h-8 w-auto" src={logo4} alt="Partner logo" />
+          <img className="h-8 w-auto" src={logo5} alt="Partner logo" />
         </div>
-
-        {/* Discover More Section */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 px-4 md:px-16 my-16">
           <div className="flex flex-col justify-center items-start gap-3 w-full max-w-md">
             <h3 className="text-left text-base text-blue-950">Discover More</h3>
@@ -290,15 +236,10 @@ function Home() {
               erat, sed diam voluptua invidunt ut labore.
             </p>
           </div>
-
           <div className="flex flex-col justify-center items-start gap-6 w-full max-w-lg">
             <div className="flex items-center gap-4">
               <div className="w-10 h-10 bg-[rgba(244,245,247,1)] rounded-full flex justify-center items-center">
-                <img
-                  className="w-4"
-                  src="/images/homepage/More1.jpg"
-                  alt="Sales icon"
-                />
+                <img className="w-4" src={more1} alt="Sales icon" />
               </div>
               <div>
                 <h3 className="font-medium text-[rgba(29,33,48,1)] text-base">
@@ -309,14 +250,9 @@ function Home() {
                 </p>
               </div>
             </div>
-
             <div className="flex items-center gap-4">
               <div className="w-10 h-10 bg-[rgba(244,245,247,1)] rounded-full flex justify-center items-center">
-                <img
-                  className="w-4"
-                  src="/images/homepage/More2.jpg"
-                  alt="Project icon"
-                />
+                <img className="w-4" src={more2} alt="Project icon" />
               </div>
               <div>
                 <h3 className="font-medium text-[rgba(29,33,48,1)] text-base">
@@ -327,14 +263,9 @@ function Home() {
                 </p>
               </div>
             </div>
-
             <div className="flex items-center gap-4">
               <div className="w-10 h-10 bg-[rgba(244,245,247,1)] rounded-full flex justify-center items-center">
-                <img
-                  className="w-4"
-                  src="/images/homepage/More3.jpg"
-                  alt="Activity icon"
-                />
+                <img className="w-4" src={more3} alt="Activity icon" />
               </div>
               <div>
                 <h3 className="font-medium text-[rgba(29,33,48,1)] text-base">
@@ -347,20 +278,13 @@ function Home() {
             </div>
           </div>
         </div>
-
-        {/* Features Section */}
         <div className="flex flex-col justify-center items-center px-4 md:px-16 my-16">
           <h2 className="font-bold text-[rgba(29,33,48,1)] text-2xl md:text-4xl text-center mb-8">
             Features
           </h2>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 bg-[rgba(215,152,225,0.15)] p-6 md:p-10 rounded-xl w-full max-w-6xl">
             <div className="flex flex-col gap-3">
-              <img
-                className="w-8"
-                src="/images/homepage/feat1.jpg"
-                alt="Encryption icon"
-              />
+              <img className="w-8" src={feat1} alt="Encryption icon" />
               <h3 className="font-medium text-[rgba(29,33,48,1)] text-xl md:text-2xl leading-tight">
                 Advanced 256-bit encryption
               </h3>
@@ -369,14 +293,9 @@ function Home() {
                 diam nonumy eirmod tempor.
               </p>
             </div>
-
             <div className="hidden md:block border-l border-r border-gray-200 px-6">
               <div className="flex flex-col gap-3">
-                <img
-                  className="w-8"
-                  src="/images/homepage/feat2.jpg"
-                  alt="Collaboration icon"
-                />
+                <img className="w-8" src={feat2} alt="Collaboration icon" />
                 <h3 className="font-medium text-[rgba(29,33,48,1)] text-xl md:text-2xl leading-tight">
                   Simple collaboration tools
                 </h3>
@@ -389,11 +308,7 @@ function Home() {
 
             {/* Mobile-only version of middle column without borders */}
             <div className="md:hidden flex flex-col gap-3">
-              <img
-                className="w-8"
-                src="/images/homepage/feat2.jpg"
-                alt="Collaboration icon"
-              />
+              <img className="w-8" src={feat2} alt="Collaboration icon" />
               <h3 className="font-medium text-[rgba(29,33,48,1)] text-xl md:text-2xl leading-tight">
                 Simple collaboration tools
               </h3>
@@ -402,13 +317,8 @@ function Home() {
                 diam nonumy eirmod tempor.
               </p>
             </div>
-
             <div className="flex flex-col gap-3">
-              <img
-                className="w-8"
-                src="/images/homepage/feat3.jpg"
-                alt="AI icon"
-              />
+              <img className="w-8" src={feat3} alt="AI icon" />
               <h3 className="font-medium text-[rgba(29,33,48,1)] text-xl md:text-2xl leading-tight">
                 Customizable AI features
               </h3>
@@ -425,7 +335,6 @@ function Home() {
           <h2 className="font-bold text-[rgba(29,33,48,1)] text-2xl md:text-4xl text-center mb-8 max-w-2xl">
             The stunning results our customers have experienced
           </h2>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="flex flex-col justify-center items-center border-2 border-[rgba(97,153,237,0.26)] rounded-lg p-6 hover:shadow-md transition-shadow">
               <p className="text-xs text-[rgba(29,33,48,1)] text-center mb-4">
@@ -435,7 +344,7 @@ function Home() {
               </p>
               <img
                 className="w-10 h-10 rounded-full my-3"
-                src="/images/homepage/exper1.png"
+                src={leader1}
                 alt="Ron Wood profile"
               />
               <h3 className="font-medium text-[rgba(29,33,48,1)] text-sm text-center">
@@ -443,7 +352,6 @@ function Home() {
               </h3>
               <p className="text-xs text-[rgba(29,33,48,1)] text-center">CEO</p>
             </div>
-
             <div className="flex flex-col justify-center items-center border-2 border-[rgba(97,153,237,0.26)] rounded-lg p-6 hover:shadow-md transition-shadow">
               <p className="text-xs text-[rgba(29,33,48,1)] text-center mb-4">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
@@ -452,7 +360,7 @@ function Home() {
               </p>
               <img
                 className="w-10 h-10 rounded-full my-3"
-                src="/images/homepage/exp2.png"
+                src={leader2}
                 alt="Sam Preston profile"
               />
               <h3 className="font-medium text-[rgba(29,33,48,1)] text-sm text-center">
@@ -460,7 +368,6 @@ function Home() {
               </h3>
               <p className="text-xs text-[rgba(29,33,48,1)] text-center">CTO</p>
             </div>
-
             <div className="flex flex-col justify-center items-center border-2 border-[rgba(97,153,237,0.26)] rounded-lg p-6 hover:shadow-md transition-shadow">
               <p className="text-xs text-[rgba(29,33,48,1)] text-center mb-4">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
@@ -469,7 +376,7 @@ function Home() {
               </p>
               <img
                 className="w-10 h-10 rounded-full my-3"
-                src="/images/homepage/epx3.png"
+                src={leader3}
                 alt="Ron Wood profile"
               />
               <h3 className="font-medium text-[rgba(29,33,48,1)] text-sm text-center">
@@ -479,8 +386,6 @@ function Home() {
             </div>
           </div>
         </div>
-
-        {/* CTA Section */}
         <div className="flex flex-col justify-center items-center gap-5 py-16 px-4 bg-gradient-to-t from-cyan-50 to-yellow-50">
           <h2 className="font-bold text-[rgba(29,33,48,1)] text-2xl md:text-4xl text-center max-w-2xl">
             Are you ready to grow your business with us?
