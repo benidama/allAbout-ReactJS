@@ -16,309 +16,146 @@ import post3 from "/images/about/room.png";
 
 function Product() {
   return (
-    <div>
-      <header className="flex flex-col justify-center">
-        <div className="flex flex-col justify-center items-center gap-4 mt-12 mb-7 pl-5">
-          <h1 className="font-bold text-[rgba(29,33,48,1)] text-[25px] md:text-[35px] leading-10 text-center">
-            We are proud of our products
-          </h1>
-          <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 text-center md:w-[490px] p-2">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua to go ahead in all sides.
-          </p>
-        </div>
+    <div className="px-4 sm:px-6 lg:px-8">
+      <header className="flex flex-col items-center gap-4 mt-12 mb-7">
+        <h1 className="font-bold text-[25px] md:text-[35px] text-center text-[rgba(29,33,48,1)] leading-10">
+          We are proud of our products
+        </h1>
+        <p className="text-xs md:text-sm text-center md:w-[490px] text-[rgba(29,33,48,1)]">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua to go ahead in all sides.
+        </p>
         <div className="flex flex-col md:flex-row justify-center items-center gap-5">
-          <img
-            className="w-[350px] h-[250px] rounded-3xl"
-            src={post3}
-            alt="our computers"
-          />
-          <img
-            className="w-[350px] h-[250px] rounded-3xl"
-            src={post2}
-            alt="computer room"
-          />
-          <img
-            className="w-[350px] h-[250px] rounded-3xl"
-            src={post1}
-            alt="head officer"
-          />
+          {[post3, post2, post1].map((post, index) => (
+            <img
+              key={index}
+              className="w-[300px] md:w-[350px] h-[200px] md:h-[250px] rounded-3xl object-cover"
+              src={post}
+              alt={`post-${index}`}
+            />
+          ))}
         </div>
       </header>
-      <main className="relative">
-        <div className="flex flex-col justify-center items-center gap-5 mt-12 mb-12">
+
+      <main>
+        <section className="text-center mb-12">
           <h3 className="text-sm text-blue-200">About Us</h3>
-          <h1 className="font-bold text-[rgba(29,33,48,1)] text-[25px] md:text-[35px] leading-10 text-center">
+          <h1 className="font-bold text-[25px] md:text-[35px] text-[rgba(29,33,48,1)] leading-10">
             We’re a team of data analysts
           </h1>
-          <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 text-center w-[380px] pl-5 md:pl-1 md:w-[510px]">
+          <p className="text-xs md:text-sm text-[rgba(29,33,48,1)] md:w-[510px] mx-auto">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum.
+            erat, sed diam voluptua.
           </p>
-        </div>
-        <div className="flex flex-col md:flex-row justify-center items-center pl-5  gap-9 pb-10 pt-12 md:pl-1 w-[390px] bg-[rgba(240,242,254,1)]">
-          <div className="flex flex-col justify-center items-start  gap-3">
-            <h3 className="text-sm text-blue-200">Our Goals</h3>
-            <h1 className="font-bold text-[rgba(29,33,48,1)] text-[25px] md:text-[35px] leading-8 md:w-[430px] text-left">
-              To upscale your business to the next level
-            </h1>
-            <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 md:w-[510px]">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum.
-            </p>
-          </div>
-          <div className="flex flex-col justify-center items-start gap-3">
-            <h3 className="text-sm text-blue-200">Our Vision</h3>
-            <h1 className="font-bold text-[rgba(29,33,48,1)] text-[25px] md:text-[35px] leading-8 text-left md:w-[470px]">
-              To provide solutions for growing companies
-            </h1>
-            <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-5 md:w-[510px]">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum.
-            </p>
-          </div>
-        </div>
+        </section>
 
-        <div className="flex flex-col justify-center items-center w-screen">
-          <div>
-            <h1 className="font-bold text-[rgba(29,33,48,1)] text-[40px] mt-8 text-center">
-              Our corporate values
-            </h1>
-            <p className="font-normal text-[rgba(29,33,48,1)] text-xs mb-5 text-center">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy.
-            </p>
-          </div>
-          <div className="flex flex-col justify-center items-center w-screen gap-11 pt-14 pb-12 bg-[rgba(249,240,251,1)]">
-            <div className="flex flex-col md:flex-row justify-center items-center gap-2">
-              <div className="flex flex-col gap-3">
-                <img
-                  className="w-10"
-                  src={icon1}
-                  alt="User first confirmation"
-                />
-
-                <h1 className="font-medium text-[rgba(29,33,48,1)] text-[18px] leading-5 text-left w-[310px]">
-                  Best in Class
-                </h1>
-                <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-4 text-left w-[285px]">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy.
-                </p>
-              </div>
-              <div className="flex flex-col gap-3">
-                <img
-                  className="w-10"
-                  src={icon2}
-                  alt="User first confirmation"
-                />
-
-                <h1 className="font-medium text-[rgba(29,33,48,1)] text-[18px] leading-5 text-left w-[310px]">
-                  Authenticity
-                </h1>
-                <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-4 text-left w-[285px]">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy.
-                </p>
-              </div>
-              <div className="flex flex-col gap-3">
-                <img
-                  className="w-10"
-                  src={icon3}
-                  alt="User first confirmation"
-                />
-
-                <h1 className="font-medium text-[rgba(29,33,48,1)] text-[18px] leading-5 text-left w-[310px]">
-                  Email Support
-                </h1>
-                <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-4 text-left w-[285px]">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy.
-                </p>
-              </div>
+        <section className="bg-[rgba(240,242,254,1)] px-4 py-10 rounded-xl flex flex-col md:flex-row gap-8 justify-center items-start">
+          {[
+            {
+              title: "Our Goals",
+              subtitle: "To upscale your business to the next level",
+            },
+            {
+              title: "Our Vision",
+              subtitle: "To provide solutions for growing companies",
+            },
+          ].map(({ title, subtitle }, index) => (
+            <div key={index} className="flex flex-col gap-3 max-w-md">
+              <h3 className="text-sm text-blue-200">{title}</h3>
+              <h1 className="font-bold text-[25px] md:text-[35px] text-[rgba(29,33,48,1)] leading-8">
+                {subtitle}
+              </h1>
+              <p className="text-xs md:text-sm text-[rgba(29,33,48,1)]">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor.
+              </p>
             </div>
-            <div className="flex flex-col md:flex-row justify-center items-center">
-              <div className="flex flex-col gap-3">
-                <img
-                  className="w-10"
-                  src={icon4}
-                  alt="User first confirmation"
-                />
+          ))}
+        </section>
 
-                <h1 className="font-medium text-[rgba(29,33,48,1)] text-[18px] leading-5 text-left w-[310px]">
-                  Discounts Available
-                </h1>
-                <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-4 text-left w-[285px]">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy.
-                </p>
-              </div>
-              <div className="flex flex-col gap-3">
-                <img
-                  className="w-10"
-                  src={icon5}
-                  alt="User first confirmation"
-                />
-
-                <h1 className="font-medium text-[rgba(29,33,48,1)] text-[18px] leading-5 text-left w-[310px]">
-                  Powerful Marketing
-                </h1>
-                <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-4 text-left w-[285px]">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy.
-                </p>
-              </div>
-              <div className="flex flex-col gap-3">
-                <img
-                  className="w-10"
-                  src={icon6}
-                  alt="User first confirmation"
-                />
-
-                <h1 className="font-medium text-[rgba(29,33,48,1)] text-[18px] leading-5 text-left w-[310px]">
-                  Inventory management
-                </h1>
-                <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-4 text-left w-[285px]">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-col justify-center items-center relative mt-5 mb-5">
-          <div className="flex flex-col gap-3 justify-center items-start relative ">
-            <h1 className="font-bold text-[rgba(29,33,48,1)] text-[35px] leading-4 text-left">
-              Our talented Team
-            </h1>
-            <p className="font-normal text-[rgba(29,33,48,1)] text-xs leading-4 text-left w-[310px]">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore.
-            </p>
-          </div>
-
-          <div className="flex flex-col justify-center items-center">
-            <div className="flex flex-col md:flex-row justify-center items-center gap-3">
-              <div className="flex flex-col  gap-3">
-                <img
-                  className="w-[250px] h-[200px] rounded-2xl relative top-5 bg-cover bg-center"
-                  src={team1}
-                  alt="User first confirmation"
-                />
-
-                <div className="bg-[rgba(224,228,252,1)] p-5 pb-3 pr-1 rounded-b-xl">
-                  <h1 className="font-medium text-[rgba(29,33,48,1)] text-[15px] leading-5 text-left">
-                    Blake Matthews
-                  </h1>
-                  <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-4 text-left">
-                    CEO & Co-Founder
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col  gap-3">
-                <img
-                  className="w-[250px] h-[200px] rounded-2xl relative top-5 bg-cover bg-center"
-                  src={team2}
-                  alt="User first confirmation"
-                />
-
-                <div className="bg-[rgba(224,228,252,1)] pr-1 p-5 pb-3 rounded-b-xl">
-                  <h1 className="font-medium text-[rgba(29,33,48,1)] text-[15px] leading-5 text-left">
-                    Jack Newman
-                  </h1>
-                  <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-4 text-left">
-                    CTO
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col  gap-3">
-                <img
-                  className="w-[250px] h-[200px] rounded-2xl relative top-5 bg-cover bg-center"
-                  src={team3}
-                  alt="User first confirmation"
-                />
-
-                <div className="bg-[rgba(224,228,252,1)] p-5 pb-3 pr-1 rounded-b-xl">
-                  <h1 className="font-medium text-[rgba(29,33,48,1)] text-[15px] leading-5 text-left">
-                    Sarinia Martins
-                  </h1>
-                  <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-4 text-left">
-                    Marketing
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col md:flex-row justify-center items-center gap-3">
-              <div className="flex flex-col  gap-3">
-                <img
-                  className="w-[250px] h-[200px] rounded-2xl relative top-5 bg-cover bg-center"
-                  src={team4}
-                  alt="User first confirmation"
-                />
-
-                <div className="bg-[rgba(224,228,252,1)] pr-1 p-5 pb-3 rounded-b-xl">
-                  <h1 className="font-medium text-[rgba(29,33,48,1)] text-[15px] leading-5 text-left">
-                    Spencer Wright
-                  </h1>
-                  <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-4 text-left">
-                    Project management
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col  gap-3">
-                <img
-                  className="w-[250px] h-[200px] rounded-2xl relative top-5 bg-cover bg-center"
-                  src={team5}
-                  alt="User first confirmation"
-                />
-
-                <div className="bg-[rgba(224,228,252,1)] pr-1 p-5 pb-3 rounded-b-xl">
-                  <h1 className="font-medium text-[rgba(29,33,48,1)] text-[15px] leading-5 text-left">
-                    Caroline Ming
-                  </h1>
-                  <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-4 text-left">
-                    Sales
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col  gap-3">
-                <img
-                  className="w-[250px] h-[200px] rounded-2xl relative top-5 bg-cover bg-center"
-                  src={team6}
-                  alt="User first confirmation"
-                />
-
-                <div className="bg-[rgba(224,228,252,1)] p-5 pb-3 rounded-b-xl">
-                  <h1 className="font-medium text-[rgba(29,33,48,1)] text-[15px] leading-5 text-left">
-                    Anna Mills
-                  </h1>
-                  <p className="font-normal text-[rgba(29,33,48,1)] text-[12px] leading-4 text-left">
-                    Design lead
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-col justify-center items-center pl-2 gap-5 w-screen pt-2 pb-14 bg-gradient-to-t from-cyan-50 to-yellow-50">
-          <h1 className="font-bold text-[rgba(29,33,48,1)] text-[25px] md:text-[40px] text-center leading-10 md:w-[630px]">
-            Are you ready to grow your business with us?
+        <section className="text-center py-10">
+          <h1 className="font-bold text-[35px] md:text-[40px] text-[rgba(29,33,48,1)]">
+            Our corporate values
           </h1>
-          <p className="font-normal text-[rgba(29,33,48,1)] text-xs text-center">
+          <p className="text-xs md:text-sm text-[rgba(29,33,48,1)] mb-5">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy.
           </p>
-          <button className="bg-[rgba(29,33,48,1)] w-28 h-9 rounded-md text-center text-[rgba(255,255,255,1)]">
-            Free trial
-          </button>
-        </div>
+
+          <div className="bg-[rgba(249,240,251,1)] p-6 rounded-xl">
+            {[icon1, icon2, icon3, icon4, icon5, icon6].map((icon, i) => (
+              <div
+                key={i}
+                className="inline-block w-full sm:w-[280px] md:w-[310px] p-3 align-top"
+              >
+                <div className="flex flex-col gap-2">
+                  <img src={icon} className="w-10" alt={`icon-${i}`} />
+                  <h1 className="font-medium text-[18px] text-[rgba(29,33,48,1)]">
+                    {
+                      [
+                        "Best in Class",
+                        "Authenticity",
+                        "Email Support",
+                        "Discounts Available",
+                        "Powerful Marketing",
+                        "Inventory management",
+                      ][i]
+                    }
+                  </h1>
+                  <p className="text-[12px] text-[rgba(29,33,48,1)]">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="flex flex-col items-center my-16 px-4 md:px-8 lg:px-20">
+          <div className="w-full max-w-4xl text-center mb-12">
+            <h1 className="text-4xl md:text-5xl font-bold text-[rgba(29,33,48,1)] mb-4">
+              Our Talented Team
+            </h1>
+            <p className="text-base md:text-lg text-[rgba(29,33,48,0.8)] max-w-xl mx-auto">
+              We bring together top talent from across industries to deliver
+              innovative solutions with passion and expertise.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-12 w-full max-w-6xl">
+            {[
+              { img: team1, name: "Blake Matthews", role: "CEO & Co-Founder" },
+              { img: team2, name: "Jack Newman", role: "CTO" },
+              { img: team3, name: "Sarinia Martins", role: "Marketing" },
+              {
+                img: team4,
+                name: "Spencer Wright",
+                role: "Project Management",
+              },
+              { img: team5, name: "Caroline Ming", role: "Sales" },
+              { img: team6, name: "Kyle Brown", role: "Support" },
+            ].map(({ img, name, role }, i) => (
+              <div
+                key={i}
+                className="flex flex-col items-center bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300"
+              >
+                <img
+                  src={img}
+                  alt={`Photo of ${name}`}
+                  className="w-full h-[240px] object-cover rounded-t-2xl"
+                />
+                <div className="bg-[rgba(224,228,252,1)] w-full p-5 rounded-b-2xl text-left">
+                  <h2 className="text-lg font-semibold text-[rgba(29,33,48,1)]">
+                    {name}
+                  </h2>
+                  <p className="text-sm text-[rgba(29,33,48,0.8)]">{role}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
       </main>
     </div>
   );

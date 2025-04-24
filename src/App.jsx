@@ -8,6 +8,7 @@ import Blog from "./pages/Blog";
 import Pricing from "./pages/Pricing";
 import About from "./pages/About";
 import Product from "./pages/Product";
+import LastComp from "./components/LastComp";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="post" element={<PostBlog />} />
           </Route>
         </Routes>
+        <LastComp />
         <Footer />
       </BrowserRouter>
     </>
